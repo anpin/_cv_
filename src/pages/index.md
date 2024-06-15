@@ -1,58 +1,71 @@
 ---
-title: Richard Hendriks - Resume
-description: Resume about Richard Hendriks, CEO of Pied Piper.
+title: Pavel Anpin - CV
+description: CV of Pavel Anpin, Founder of APES.
 layout: ../layouts/Minimalist.astro
 pdfLink: resume.pdf
 ---
 
-# Richard Hendriks
+# Pavel Anpin, 1992
 
-**Programmer**
+**Technical Founder, Hacker, Software Engineer**
 
-San Francisco, USA | richard.hendriks@gmail.com | http://richardhendricks.com
+pavel@anpin.fyi | https://anpin.fyi | https://github.com/anpin/
 
-Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!
+Pavel Anpin 
+
+## Summary 
+
+Innovative and driven technical founder with extensive experience in software engineering, smart building and AV technologies. Proven ability to lead teams, manage projects, and create scalable solutions. (Currently) passionate about functional programming and reproduciblility, cutting-edge technologies, with a strong track record of successful projects and satisfied clients. In my spare time I enjoy cycling, cooking, soldering mechanical keyboards or pondering on the nature of consciousness . 
 
 ## Work Experience
 
-### [Google](https://www.google.com/)
+### [Alerio](https://alerio.net)
 
-#### Senior Software Engineer | Oct 2022 - Current
+### Founder 
+#### Dec 2022 - Present
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+Co-founded Alerio, a smart building software startup, delivering intuitive dashboards, custom automation rules, visualization, offline voice control, and more.
+Developed all the software solutions, ensuring robust and scalable architecture Focused on expanding the business, exploring opportunities for funding, partnerships, and market expansion.
 
-#### Software Engineer | Aug 2018 - Oct 2022
+### Independent Contractor
+#### Dec 2016 - Present (7 yrs +)
 
-Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.
+- Delivered bespoke software solutions across various domains, with a focus on AV automation systems, full-stack development, and app development.
+- Delivered multiple cross-platform apps in Xamarin.Forms/ASP.NET with full CI/CD pipelines and testing, supported and transitioned them into MAUI/ASP.NET Core solutions.
+- Transitioned from C# to functional programming with F#, leveraging libraries such as Akka.Net, Giraffe, and Avalonia.
+- Gained expertise with a broad range of technologies such as Nix and NixOS, Lua, Rust (embedded), PostgreSQL (and TimescaleDB), SQL, HTML (and HTMX!), CSS (love TailwindCSS with DaisyUI, but can also write styles from the ground up), CI/CD pipelines (Azure DevOps, GitLab, GitHub), FAKE/MAKE build automation, bash, and both cloud and self-hosted environments.
+- Cultivated a diverse skill set, enabling versatile and innovative approaches to complex technical challenges.
 
-### [Pied Piper](http://piedpiper.com/)
 
-#### CEO/President | Dec 2013 - Dec 2014
+### [IMS Group Ltd](https://www.facebook.com/imsgroup.pro/) 
 
-Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.
+#### Chief Engineer | Jun 2016 - Sep 2017 (1 yr 4 Spearheadedmos)
 
-- Build an algorithm for artist to detect if their music was violating copy right infringement laws
-- Successfully won Techcrunch Disrupt
-- Optimized an algorithm that holds the current world record for Weisman Scores
+- Spearheaded engineering workflow creation and team training for a newly-formed systems integrator in the hospitality industry.
+- Managed projects, supervised engineering and installation teams, and provided sales engineering support.
+- Designed systems, commissioned equipment, and conducted post-installation training.
+- Focused on programming and commissioning AV systems, ensuring seamless integration and optimal performance.
 
-## Projects
+### [AudioVideoSystems Ltd](https://audioprofi.ru/) 
 
-### [Sillicon Valley](<https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)>)
+#### Project Engineer | Dec 2015 - May 2016 (6 mos)
 
-#### Video Compression for 3D Media
+- Engineered AV systems, coordinated with clients and contractors, programmed equipment, and provided post-installation training and support.
+- Worked within a larger team, contributing to large-scale projects with a structured approach.
 
-#### Founder | Oct 2014
+### [8 Ohm Ltd](https://8ohm.ru/) 
 
-Innovative middle-out compression algorithm that changes the way we store data.
+#### Project Engineer | Aug 2013 - Nov 2015 (2 yrs 4 mos)
 
-## Languages
+- Designed AV systems, communicated with customers and contractors, programmed equipment, and conducted post-installation training and support.
+- Started as a summer intern and quickly advanced to a project engineer, demonstrating adaptability and a strong work ethic.
+- Focused heavily on programming and commissioning AV systems, delivering tailored solutions that met clients' specific needs.
 
-| English        | English     |
-| -------------- | ----------- |
-| Native speaker | Proficiency |
 
 ## Education
 
-### University of Oklahoma
+### Siberian State University of Telecomunictions and Informatics
 
-#### Bachelor, Information Technology | Jun 2011 - Jan 2014
+##### Engineer's degree, Audio Visual Technologies | Sep 2009 - Jun 2014 (5 yrs)
+
+#### Graduation Work: Project of audiovisual complex for universal hall in the hotel "Hermitage" in the city of Yekaterinburg
