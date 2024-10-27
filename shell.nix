@@ -12,7 +12,7 @@ mkShell {
    playwright-driver
    playwright-test
   ];
-  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1;
   PLAYWRIGHT_BROWSERS_PATH="${pkgs.playwright-driver.browsers}";
   PLAYWRIGHT_NODEJS_PATH="${pkgs.nodejs}/bin/node";
   shellHook = ''
