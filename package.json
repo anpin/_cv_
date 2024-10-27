@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "npx playwright install",
     "dev": "astro dev",
     "start": "astro dev",
     "generate-pdf": "node ./scripts/generate-pdf.js",
