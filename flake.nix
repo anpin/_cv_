@@ -1,8 +1,8 @@
 {
-  description = "A very basic flake";
+  description = "CV webpage and PDF generator";
 
   inputs = {
-    nixpkgs.url = "github:anpin/nixpkgs?ref=next";
+    nixpkgs.url = "github:nixos/nixpkgs";
   };
 
   outputs = { self, nixpkgs }:

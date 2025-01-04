@@ -16,7 +16,7 @@ mkShell {
   PLAYWRIGHT_BROWSERS_PATH="${pkgs.playwright-driver.browsers}";
   PLAYWRIGHT_NODEJS_PATH="${pkgs.nodejs}/bin/node";
   shellHook = ''
-    playwright_chromium_revision="$(${jq}/bin/jq --raw-output '.browsers[] | select(.name == "chromium").revision' ${playwright-driver}/package/browsers.json)"
+    playwright_chromium_revision="$(${jq}/bin/jq --raw-output '.browsers[] | select(.name == "chromium").revision' ${playwright-driver}/browsers.json)"
 
     export PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH="${playwright-driver.browsers}/chromium-$playwright_chromium_revision/chrome-linux/chrome";
 '';

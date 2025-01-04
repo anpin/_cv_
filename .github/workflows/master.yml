@@ -9,14 +9,32 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v27
         with:
-          node-version-file: ".nvmrc"
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix build -L
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: result/
+  # https://github.com/actions/deploy-pages
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write  
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
-      - run: yarn install --frozen-lockfile
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 
 
-      - run: yarn build
+
+      
