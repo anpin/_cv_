@@ -1,6 +1,6 @@
 ---
 import "@fontsource/poppins";
-import Download from "../components/Download.astro";
+// import Download from "../components/Download.astro";
 import "../styles.css";
 
 type Props = {
@@ -14,14 +14,14 @@ type Props = {
 
 const { PDF_VIEW, FORCE_THEME = "" } = import.meta.env;
 
-const { title, pdfLink, noIndex, description } = Astro.props
+const { title, noIndex, description } = Astro.props
   .frontmatter as Props["frontmatter"];
 
 // Firstname Lastname -> ['F', 'L']
-const initials = title
-  .split(" ")
-  .map(([initial]) => initial!.toUpperCase())
-  .slice(0, 2);
+// const initials = title
+//   .split(" ")
+//   .map(([initial]) => initial!.toUpperCase())
+//   .slice(0, 2);
 ---
 
 <!doctype html>
@@ -38,7 +38,7 @@ const initials = title
   <body class={!PDF_VIEW ? "bg-indigo-50 dark:bg-slate-900 sm:my-14" : ""}>
     <div class="container mx-auto flex justify-center">
       <article class="minimalist relative">
-        <div
+        <!-- <div
           class="absolute top-4 rounded-sm bg-indigo-400 px-4 py-1 sm:left-8 sm:top-12"
         >
           <div
@@ -46,14 +46,14 @@ const initials = title
           >
             {initials.map((initial) => <span>{initial}</span>)}
           </div>
-        </div>
-        {
+        </div> -->
+        <!-- {
           !PDF_VIEW && (
             <div class="not-prose absolute right-4 top-4">
               <Download href={pdfLink} />
             </div>
           )
-        }
+        } -->
         <slot />
       </article>
     </div>
