@@ -11,7 +11,7 @@ const main = async () => {
   await page.emulateMedia({ media: "screen" });
 
   await page.pdf({
-    path: "public/resume.pdf",
+    path: "public/pavel_anpin_cv.pdf",
     margin: { top: "50px", bottom: "80px" },
     printBackground: true,
   });

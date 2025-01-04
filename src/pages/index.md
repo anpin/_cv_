@@ -2,7 +2,7 @@
 title: Pavel Anpin - CV
 description: CV of Pavel Anpin.
 layout: ../layouts/Minimalist.astro
-pdfLink: resume.pdf
+pdfLink: pavel_anpin_cv.pdf
 ---
 
 # Pavel Anpin, 1992
