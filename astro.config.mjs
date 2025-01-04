@@ -13,4 +13,7 @@ export default defineConfig({
       external: ['svgo'],
     },
   },
+  devToolbar: {
+    enabled: false
+  }
 });
