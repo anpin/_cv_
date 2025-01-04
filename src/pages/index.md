@@ -19,7 +19,7 @@ Innovative and driven technical founder with extensive experience in software en
 
 ## Work Experience
 
-### [Alerio](https://alerio.net)
+### [Alerio](https://alerio.net/?ref=anpin.fyi)
 
 #### Technical Founder | Dec 2022 - Present
 
