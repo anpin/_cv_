@@ -1,6 +1,6 @@
 ---
-import "@fontsource/poppins";
-// import Download from "../components/Download.astro";
+import "@fontsource/dm-mono";
+import Download from "../components/Download.astro";
 import "../styles.css";
 
 type Props = {
@@ -14,7 +14,7 @@ type Props = {
 
 const { PDF_VIEW, FORCE_THEME = "" } = import.meta.env;
 
-const { title, noIndex, description } = Astro.props
+const { title, noIndex, description, pdfLink } = Astro.props
   .frontmatter as Props["frontmatter"];
 
 // Firstname Lastname -> ['F', 'L']
@@ -35,25 +35,16 @@ const { title, noIndex, description } = Astro.props
     {noIndex && <meta name="robots" content="noindex" />}
     <title>{title}</title>
   </head>
-  <body class={!PDF_VIEW ? "bg-indigo-50 dark:bg-slate-900 sm:my-14" : ""}>
+  <body class={!PDF_VIEW ? "bg-slate-500 dark:bg-slate-900 sm:my-14" : ""}>
     <div class="container mx-auto flex justify-center">
       <article class="minimalist relative">
-        <!-- <div
-          class="absolute top-4 rounded-sm bg-indigo-400 px-4 py-1 sm:left-8 sm:top-12"
-        >
-          <div
-            class="flex h-fit select-none flex-col items-center text-sm font-bold"
-          >
-            {initials.map((initial) => <span>{initial}</span>)}
-          </div>
-        </div> -->
-        <!-- {
+        {
           !PDF_VIEW && (
             <div class="not-prose absolute right-4 top-4">
               <Download href={pdfLink} />
             </div>
           )
-        } -->
+        }
         <slot />
       </article>
     </div>
