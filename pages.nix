@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
     yarn --offline --frozen-lockfile --ignore-platform --ignore-scripts --no-progress --non-interactive install
     patchShebangs node_modules
 
-    playwright_chromium_revision="$(${jq}/bin/jq --raw-output '.browsers[] | select(.name == "chromium").revision' ${playwright-driver}/package/browsers.json)"
+    playwright_chromium_revision="$(${jq}/bin/jq --raw-output '.browsers[] | select(.name == "chromium").revision' ${playwright-driver}/browsers.json)"
     export PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH="${playwright-driver.browsers}/chromium-$playwright_chromium_revision/chrome-linux/chrome";
     export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1;
     export PLAYWRIGHT_BROWSERS_PATH="${playwright-driver.browsers}";
