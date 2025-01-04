@@ -1,6 +1,6 @@
 ---
 title: Pavel Anpin - CV
-description: CV of Pavel Anpin, Founder of APES.
+description: CV of Pavel Anpin.
 layout: ../layouts/Minimalist.astro
 pdfLink: resume.pdf
 ---
@@ -31,7 +31,7 @@ Co-founded Alerio, a smart building software startup, delivering intuitive dashb
 - Delivered bespoke software solutions across various domains, with a focus on audio-visual installations, automation systems, full-stack development, and app development.
 - Delivered multiple cross-platform apps in Xamarin.Forms + ASP.NET with full CI/CD pipelines and testing, supported and transitioned them into MAUI/Avalonia + ASP.NET Core solutions.
 - Transitioned from C# to functional programming with F#, leveraging libraries such as Akka.Net, Giraffe, and Avalonia.
-- Gained expertise with a broad range of technologies such as (but not limited to) dotnet, Nix and NixOS, Lua, C, Rust (embedded), PostgreSQL (and TimescaleDB), SQL, HTML (and HTMX!), CSS (love TailwindCSS with DaisyUI, but can also write styles from the ground up), CI/CD pipelines (Azure DevOps, GitLab, GitHub, Gitea/Forgejo), CMAKE, FAKE (F# MAKE), SOPS, GPG, bash, and both cloud and self-hosted environments.
+- Gained expertise with a broad range of technologies such as (but not limited to) C#, F#, Nix and NixOS, Lua, C, Rust (embedded), PostgreSQL (and TimescaleDB), SQL, Event Sourcing, CQRS, Akka.Net, Fable, Elmish, sutil, htmx, CSS (love TailwindCSS with DaisyUI, but can also write styles from the ground up), p5.js, vvvv, shaders, CI/CD pipelines (Azure DevOps, GitLab, GitHub, Gitea/Forgejo), CMAKE, FAKE (F# MAKE), SOPS, GPG, bash, and both cloud and self-hosted environments.
 - Cultivated a diverse skill set, enabling versatile and innovative approaches to complex technical challenges.
 
 
