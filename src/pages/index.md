@@ -15,7 +15,7 @@ Pavel Anpin
 
 ## Summary 
 
-Innovative and driven technical founder with extensive experience in software engineering, smart building and AV technologies. Proven ability to lead teams, manage projects, and create scalable solutions. (Currently) passionate about functional programming and reproduciblility, cutting-edge technologies, with a strong track record of successful projects and satisfied clients. In my spare time I enjoy cycling, cooking, soldering mechanical keyboards or pondering on the nature of consciousness . 
+Innovative and driven technical founder with extensive experience in software engineering, smart building and AV technologies. Proven ability to lead teams, manage projects, and create scalable solutions. (Currently) passionate about functional programming and reproduciblility, cutting-edge technologies, with a strong track record of successful projects and satisfied clients. In my spare time I enjoy cycling, cooking, soldering mechanical keyboards while pondering on the nature of consciousness. 
 
 ## Work Experience
 
@@ -30,10 +30,10 @@ Developed all the software solutions, ensuring robust and scalable architecture 
 ### Independent Contractor
 #### Dec 2016 - Present (7 yrs +)
 
-- Delivered bespoke software solutions across various domains, with a focus on AV automation systems, full-stack development, and app development.
-- Delivered multiple cross-platform apps in Xamarin.Forms/ASP.NET with full CI/CD pipelines and testing, supported and transitioned them into MAUI/ASP.NET Core solutions.
+- Delivered bespoke software solutions across various domains, with a focus on audio-visual installations, automation systems, full-stack development, and app development.
+- Delivered multiple cross-platform apps in Xamarin.Forms + ASP.NET with full CI/CD pipelines and testing, supported and transitioned them into MAUI/Avalonia + ASP.NET Core solutions.
 - Transitioned from C# to functional programming with F#, leveraging libraries such as Akka.Net, Giraffe, and Avalonia.
-- Gained expertise with a broad range of technologies such as Nix and NixOS, Lua, Rust (embedded), PostgreSQL (and TimescaleDB), SQL, HTML (and HTMX!), CSS (love TailwindCSS with DaisyUI, but can also write styles from the ground up), CI/CD pipelines (Azure DevOps, GitLab, GitHub), FAKE/MAKE build automation, bash, and both cloud and self-hosted environments.
+- Gained expertise with a broad range of technologies such as Nix and NixOS, Lua, C, Rust (embedded), PostgreSQL (and TimescaleDB), SQL, HTML (and HTMX!), CSS (love TailwindCSS with DaisyUI, but can also write styles from the ground up), CI/CD pipelines (Azure DevOps, GitLab, GitHub), MAKE And FAKE build automation, bash, and both cloud and self-hosted environments.
 - Cultivated a diverse skill set, enabling versatile and innovative approaches to complex technical challenges.
 
 
