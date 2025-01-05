@@ -64,7 +64,7 @@ Co-founded Alerio, a smart building software startup, delivering intuitive dashb
 
 ## Education
 
-### Siberian State University of Telecomunictions and Informatics
+### Siberian State University of Telecommunications and Information Science
 
 ##### Engineer's degree, Audio Visual Technologies | Sep 2009 - Jun 2014 (5 yrs)
 
