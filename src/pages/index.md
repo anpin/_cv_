@@ -9,9 +9,11 @@ pdfLink: pavel_anpin_cv.pdf
 
 **Software Engineer, Consultant, Technical Founder, Hacker**
 
-pavel@anpin.fyi | https://t.me/anpin 
 
-https://anpin.fyi | https://github.com/anpin/
+https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi)
+
+[github:anpin](https://github.com/anpin/) | [matrix:anpin](https://matrix.to/#/@anpin:matrix.org) | [telegram:anpin](https://t.me/anpin)
+
 
 ## Summary 
 
