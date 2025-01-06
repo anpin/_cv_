@@ -26,7 +26,7 @@ Innovative and driven technical founder with extensive experience in software en
 
 #### Technical Founder | Dec 2022 - Present
 
-Co-founded Alerio, a smart building software startup, delivering intuitive dashboards, custom automation rules, visualization, offline voice control, and more. My primary focus was on developing software solutions, deploying them to customer servers, develop website and deploy backend services to manage and operate the company, support on-site teams. Our app stack is NixOS, TimescaleDB, F# (Akka.Net, Giraffe, HTMX, DaisyUI). For the company we self-host all our systems on NixOS using declarative NixOS containers including (but not limited to) OpenResty/nginx, Authentik, Attic, Forgejo, PostrgeSQL, Clickhouse, Grafana/Mimir/Loki, Minio, Plausible.
+Co-founded Alerio, a smart building software startup, delivering intuitive dashboards, custom automation rules, visualization, offline voice control, and more. My primary focus was on developing software solutions, deploying them to customer servers, develop website and deploy backend services to manage and operate the company, support on-site teams. Our app stack is NixOS, TimescaleDB, F# (Akka.Net, Giraffe, HTMX, DaisyUI). For the company we self-host all our systems on NixOS using declarative NixOS containers including (but not limited to) OpenResty/nginx, Authentik, Attic, Forgejo, PostrgeSQL, Clickhouse, Grafana/Mimir/Loki, Minio, Plausible, restic.
 
 ### Independent Contractor
 #### Dec 2016 - Present (7 yrs +)
@@ -34,7 +34,7 @@ Co-founded Alerio, a smart building software startup, delivering intuitive dashb
 - Delivered bespoke software solutions across various domains, with a focus on audio-visual installations, automation systems, full-stack development, and app development.
 - Delivered multiple cross-platform apps in Xamarin.Forms + ASP.NET with full CI/CD pipelines and testing, supported and transitioned them into MAUI/Avalonia + ASP.NET Core solutions.
 - Transitioned from C# to functional programming with F#, leveraging libraries such as Akka.Net, Giraffe, and Avalonia.
-- Gained expertise with a broad range of technologies such as (but not limited to) C#, F#, Nix and NixOS, Lua, C, Rust (embedded), PostgreSQL (and TimescaleDB), SQL, Event Sourcing, CQRS, Akka.Net, Fable, Elmish, sutil, htmx, webrtc, CSS, p5.js, vvvv, shaders, CI/CD pipelines (Azure DevOps, GitLab, GitHub, Gitea/Forgejo), CMAKE, FAKE (F# MAKE), SOPS, GPG, bash, and both cloud and self-hosted environments.
+- Gained expertise with a broad range of technologies such as (but not limited to) C#, F#, Nix and NixOS, Lua, C, Rust (embedded), PostgreSQL (and TimescaleDB), SQL, Event Sourcing, CQRS, Akka.Net, Fable, Elmish, sutil, htmx, webrtc, CSS, p5.js, astro, vvvv, shaders,  CMAKE, FAKE (F# MAKE), CI/CD pipelines (Azure DevOps, GitLab, GitHub, Gitea/Forgejo), docker, SOPS, GPG, bash, and both cloud and self-hosted environments.
 - Cultivated a diverse skill set, enabling versatile and innovative approaches to complex technical challenges.
 
 
