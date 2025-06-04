@@ -1,0 +1,139 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  url: string;
+  tags: string[];
+  index: number; // Keeping for backwards compatibility
+}
+
+const { title, description, pubDate, url, tags } = Astro.props;
+---
+
+<a 
+  href={url} 
+  class="blog-post-card interactive-item" 
+  data-title={title}
+  data-description={description}
+  data-tags={tags.join(',')}
+>
+  <div class="card-content gradient-blue-orange">
+    <div class="card-decoration">
+      <div class="tech-pattern"></div>
+      <div class="circuit-dots"></div>
+    </div>
+    
+    <div class="card-body">
+      <h2 class="card-title">{title}</h2>
+      <p class="card-date">{pubDate.toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'})}</p>
+      <p class="card-description">{description}</p>
+      <div class="card-tags">
+        {tags.map(tag => (
+          <span class="tag-item">{tag}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</a>
+
+<style>
+  .blog-post-card {
+    display: block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: #e3e3e3;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-post-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-content {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1.5rem;
+    border-left: 3px solid rgba(39, 69, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.2;
+  }
+  
+  .tech-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10 L110 10 L110 110 L10 110 Z' stroke='rgba(39,69,255,0.3)' fill='none' stroke-width='1'/%3E%3Cpath d='M30 30 L90 30 L90 90 L30 90 Z' stroke='rgba(255,107,53,0.3)' fill='none' stroke-width='1'/%3E%3C/svg%3E");
+    background-size: 120px 120px;
+  }
+  
+  .circuit-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='2' fill='rgba(39,69,255,0.5)'/%3E%3Ccircle cx='40' cy='20' r='2' fill='rgba(255,107,53,0.5)'/%3E%3Ccircle cx='60' cy='20' r='2' fill='rgba(39,69,255,0.5)'/%3E%3Ccircle cx='20' cy='40' r='2' fill='rgba(255,107,53,0.5)'/%3E%3Ccircle cx='40' cy='40' r='2' fill='rgba(39,69,255,0.5)'/%3E%3Ccircle cx='60' cy='40' r='2' fill='rgba(255,107,53,0.5)'/%3E%3Ccircle cx='20' cy='60' r='2' fill='rgba(39,69,255,0.5)'/%3E%3Ccircle cx='40' cy='60' r='2' fill='rgba(255,107,53,0.5)'/%3E%3Ccircle cx='60' cy='60' r='2' fill='rgba(39,69,255,0.5)'/%3E%3C/svg%3E");
+    background-size: 80px 80px;
+  }
+  
+  .card-body {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .card-date {
+    font-size: 0.875rem;
+    color: rgba(255, 107, 53, 0.9);
+    margin-bottom: 1rem;
+    font-family: monospace;
+  }
+  
+  .card-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  
+  .tag-item {
+    background: rgba(39, 69, 255, 0.2);
+    border: 1px solid rgba(39, 69, 255, 0.3);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    transition: all 0.2s ease;
+  }
+  
+  .tag-item:hover {
+    background: rgba(39, 69, 255, 0.3);
+  }
+  
+  .gradient-blue-orange {
+    background: linear-gradient(135deg, rgba(39, 69, 255, 0.2), rgba(255, 107, 53, 0.2));
+  }
+</style>

@@ -25,3 +25,10 @@ public/*.pdf
 /blob-report/
 /playwright/.cache/
 result
+
+
+
+[Bb]in/
+[Oo]bj/
+fable_modules/
+*.fs.js

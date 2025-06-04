@@ -1,0 +1,89 @@
+---
+interface Props {
+  placeholder?: string;
+}
+
+const { placeholder = "Search posts..." } = Astro.props;
+---
+
+<div class="search-container">
+  <div class="search-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </div>
+  <input
+    type="text"
+    id="search-input"
+    placeholder={placeholder}
+    class="search-input"
+  />
+  <div class="search-decoration"></div>
+</div>
+
+<style>
+  .search-container {
+    position: relative;
+    max-width: 36rem;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(15, 17, 26, 0.6);
+    border: 1px solid rgba(39, 69, 255, 0.3);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    color: rgba(255, 107, 53, 0.8);
+    margin-right: 0.75rem;
+  }
+
+  .search-input {
+    background: transparent;
+    border: none;
+    color: #e3e3e3;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    outline: none;
+  }
+
+  .search-input::placeholder {
+    color: rgba(227, 227, 227, 0.5);
+  }
+
+  .search-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='10' y1='20' x2='30' y2='20' stroke='rgba(39,69,255,0.3)' stroke-width='1'/%3E%3Cline x1='10' y1='40' x2='30' y2='40' stroke='rgba(255,107,53,0.3)' stroke-width='1'/%3E%3Cline x1='10' y1='60' x2='30' y2='60' stroke='rgba(39,69,255,0.3)' stroke-width='1'/%3E%3Cline x1='10' y1='80' x2='30' y2='80' stroke='rgba(255,107,53,0.3)' stroke-width='1'/%3E%3C/svg%3E");
+    background-size: 40px 100%;
+    z-index: 0;
+  }
+</style>
+
+<script>
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const blogPosts = document.querySelectorAll('.blog-post-card');
+  
+  searchInput?.addEventListener('input', (e) => {
+    const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
+    
+    blogPosts.forEach((post) => {
+      const title = post.getAttribute('data-title')?.toLowerCase() || '';
+      const description = post.getAttribute('data-description')?.toLowerCase() || '';
+      const tags = post.getAttribute('data-tags')?.toLowerCase() || '';
+      
+      if (title.includes(searchTerm) || description.includes(searchTerm) || tags.includes(searchTerm)) {
+        post.classList.remove('hidden');
+      } else {
+        post.classList.add('hidden');
+      }
+    });
+  });
+</script>

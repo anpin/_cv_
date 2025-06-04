@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import SearchBar from '../../components/SearchBar.astro';
+import TagCloud from '../../components/TagCloud.astro';
+
+const posts = await getCollection('blog', ({ data }) => {
+  return import.meta.env.PROD ? !data.draft : true;
+});
+
+const sortedPosts = posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Get unique tags from all posts
+const allTags = [...new Set(posts.flatMap(post => post.data.tags))].sort();
+---
+
+<Layout title="Blog | Anpin">
+  <div class="bg-futuristic min-h-screen">
+    
+    <main class="container mx-auto px-4 py-12">
+      <div class="blog-layout">
+        <!-- Left column: Blog posts -->
+        <div class="blog-posts-column">
+          {
+            sortedPosts.map((post, index) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                pubDate={post.data.pubDate}
+                url={`/blog/${post.slug}`}
+                tags={post.data.tags}
+                index={index}
+              />
+            ))
+          }
+        </div>
+        
+        <!-- Right column: Header and controls -->
+        <div class="blog-sidebar gap-4">
+          <div class="blog-controls p-4 gradient-orange-blue rounded-lg">
+              <h1 class="text-3xl font-bold mb-3">Blog</h1>
+              <p class="text-sm text-gray-300">Thoughts on functional programming, IoT, and creative technology</p>
+              <a href="/" class="neo-btn block w-full text-center mt-4">About me</a>
+            <SearchBar />
+            <TagCloud tags={allTags} />
+          </div>
+
+          <div class="blog-controls gradient-orange-blue p-4 rounded-lg">
+            <div class="gradient-blue-orange clickable-card">
+              <p class="mb-0 text-base text-lg sm:text-sm 2xl:text-2xl">Looking for a consultant, collaborator, or dev-for-hire? I'm open to consulting, creative tech collaborations, and new gigs.</p>
+                <a href="mailto:hi@anpin.fyi"  class="mt-2 lg:mt-2 text-center text-2xl md:text-xl font-bold gradient-text">
+                  Let's Talk <span class="ml-2">→</span>
+                </a>
+            </div>            
+          </div>
+      </div>
+    </main>
+  </div>
+</Layout>

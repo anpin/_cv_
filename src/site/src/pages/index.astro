@@ -1,0 +1,416 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import BlogCard from '../components/BlogCard.astro';
+
+const posts = await getCollection('blog', ({ data }) => {
+  return import.meta.env.PROD ? !data.draft : true;
+});
+
+const recentPosts = posts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 1);
+---
+<Layout title="Anpin">
+	<main class="h-screen bg-futuristic w-full overflow-hidden" id="mainContainer">
+		<div class="mouse-position-tracker"></div>
+
+		<!-- Controls Menu -->
+		<div class="controls-menu">
+			<button id="animationToggle" class="control-btn" aria-label="Toggle Animations">
+				<span class="control-icon animation-icon"></span>
+				<span class="control-tooltip" style="left: 90px">Animations: On</span>
+			</button>
+			<button id="themeToggle" class="control-btn" aria-label="Toggle Theme">
+				<span class="control-icon theme-icon"></span>
+				<span class="control-tooltip" style="left: 46px">Theme: Dark</span>
+			</button>
+		</div>
+
+		<div class="golden-layout w-full h-full">
+			<div class="fibonacci-spiral h-full w-full">
+					<!-- Header (34) -->
+					<div class="section-1 gradient-blue-orange interactive-panel">
+						<div class="flex flex-col justify-center h-full p-2 md:p-8 relative z-10">
+							<div class="geometric-pattern-left absolute inset-0 opacity-20 z-0"></div>
+							<div class="digital-grid absolute inset-0 z-0"></div>
+							<div class="waveform-animation absolute bottom-0 left-0 right-0 h-16 z-0"></div>
+							<div class="circuit-pattern absolute top-0 right-0 w-32 h-32 z-0"></div>
+							
+							<h1 class="text-4xl md:text-6xl font-bold mb-4 xl:mb-10 glitch-text">
+							<span class="noise-layer"></span>
+							Pavel Anpin
+							<br/>
+							<span class="block mt-2">Systems Hacker & Creative Technologist</span>
+						</h1>
+						<p class="text-xl md:text-2xl font-mono text-left leading-tight mb-4 xl:mb-10">
+							<span class="text-gray-400">let</span>
+							<span class="font-bold gradient-text-alt animated-gradient"> anpin </span>=
+							<span class="block ml-6 gradient-text animated-gradient">coffee</span>
+							<span class="block ml-6"><span class="text-gray-400">&gt;&gt;</span> <span class="gradient-text animated-gradient">bicycle</span></span>
+							<span class="block ml-6"><span class="text-gray-400">&gt;&gt;</span> <span class="gradient-text animated-gradient">functional_programming</span></span>
+							<span class="block ml-6"><span class="text-gray-400">&gt;&gt;</span> <span class="gradient-text animated-gradient">cybernetic_visuals</span></span>
+							<span class="block ml-6"><span class="text-gray-400">&gt;&gt;</span> <span class="gradient-text animated-gradient">startups</span></span>
+						  </p>
+						  
+						<p class="text-base text-center mt-2 text-gray-500 italic">
+							Systems thinker. Visual tinkerer. Builder of weird and useful things.
+						</p>
+							<a href="#contact" class="get-in-touch-btn hidden-on-desktop">Get in touch</a>
+							<div class="geometric-shapes">
+								<div class="shape circle"></div>
+								<div class="shape triangle"></div>
+								<div class="shape diamond"></div>
+							</div>
+						</div>
+					</div>
+					<div class="section-3 gradient-orange-blue interactive-panel">
+						<div class="h-full p-3 2xl:p-6 relative z-10">
+							<div class="diagonal-pattern absolute inset-0 opacity-20 z-0"></div>
+							<div class="dot-matrix absolute inset-0 z-0"></div>
+							<h2 class="text-base font-bold neo-text">About me</h2>
+							<p class="text-sm 2xl:text-2xl mb-3">I'm a systems generalist and technical founder who builds scalable IoT infrastructure with F# and NixOS by day, and explores generative multimedia art by night. Currently co-building <a class="gradient-link" href="https://alerio.net?ref=anpin.fyi" target="_blank">Alerio</a> — a smart-building platform — while hacking on experimental multimedia systems.</p>
+							
+							<div class="meta-links flex flex-wrap gap-3 mb-4">
+								<a href="/cv" class="text-sm neo-btn interactive-btn">CV</a>
+								<a href="https://github.com/anpin" class="text-sm neo-btn interactive-btn">GitHub</a>
+								<a href="https://www.linkedin.com/in/pavel-anpin" class="text-sm neo-btn interactive-btn">LinkedIn</a>
+								<a href="https://t.me/anpin" class="text-sm neo-btn interactive-btn">Telegram</a>
+							</div>
+							
+							<div class="circle-progress">
+								<svg viewBox="0 0 36 36" class="circular-chart">
+									<path class="circle-bg" d="M18 2.0845
+										a 15.9155 15.9155 0 0 1 0 31.831
+										a 15.9155 15.9155 0 0 1 0 -31.831"/>
+									<path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+										a 15.9155 15.9155 0 0 1 0 31.831
+										a 15.9155 15.9155 0 0 1 0 -31.831"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<!-- Skills (21) -->
+					<div class="section-2 gradient-orange-blue interactive-panel">
+						<div class="h-full 2xl:p-6 relative z-10">
+							<div class="wave-pattern absolute inset-0 opacity-20 z-0"></div>
+							<div class="data-flow absolute inset-0 z-0"></div>
+							<div class="arrow-pattern absolute right-0 top-0 w-16 h-full z-0"></div>
+							
+							<h2 class="text-md 2xl:text-2xl font-bold neo-text">Skills</h2>
+							<div class="space-y-1 2xl:space-y-4">
+								<div class="skill-block interactive-item">
+									<div class="skill-icon functional-icon" title="Functional Programming"></div>
+									<div>
+										<h3 class="text-md 2xl:text-lg font-bold">Functional Full-Stack Software Engineering</h3>
+										<p class="text-xs lg:text-lg">From robust, distributed, type-safe backends and embedded UIs to reactive websites and AI agents — all crafted to fit your system — not the other way around.</p>
+									</div>
+								</div>
+								<div class="skill-block interactive-item">
+									<div class="skill-icon creative-coding-icon" title="Creative Systems & Media Tech"></div>
+									<div>
+										<h3 class="text-md 2xl:text-lg font-bold">Creative Systems and Media Tech</h3>
+										<p class="text-xs lg:text-lg">Whether it’s experimental video art, university livestreams, or corporate AV systems — your call. I’ve built them all.</p>
+									</div>
+								</div>
+								<div class="skill-block interactive-item">
+									<div class="skill-icon" title="IoT & Building Automation">
+										<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+							
+											<path fill="#ff6b35" d="M340-360q-25 0-42.5-17.5T280-420q0-25 17.5-42.5T340-480q25 0 42.5 17.5T400-420q0 25-17.5 42.5T340-360Zm140 120q-25 0-42.5-17.5T420-300q0-25 17.5-42.5T480-360q25 0 42.5 17.5T540-300q0 25-17.5 42.5T480-240ZM340-120q-25 0-42.5-17.5T280-180q0-25 17.5-42.5T340-240q25 0 42.5 17.5T400-180q0 25-17.5 42.5T340-120Zm280-240q-25 0-42.5-17.5T560-420q0-25 17.5-42.5T620-480q25 0 42.5 17.5T680-420q0 25-17.5 42.5T620-360Zm0 240q-25 0-42.5-17.5T560-180q0-25 17.5-42.5T620-240q25 0 42.5 17.5T680-180q0 25-17.5 42.5T620-120Zm140-120q-25 0-42.5-17.5T700-300q0-25 17.5-42.5T760-360q25 0 42.5 17.5T820-300q0 25-17.5 42.5T760-240Zm-560 0q-25 0-42.5-17.5T140-300q0-25 17.5-42.5T200-360q25 0 42.5 17.5T260-300q0 25-17.5 42.5T200-240Z"/>
+											<path fill="#2745ff" d="M336-560q-26 0-47-15.5T260-616l-20-64h-40q-33 0-56.5-23.5T120-760v-120h720v120q0 33-23.5 56.5T760-680h-40l-26 68q-9 23-29 37.5T620-560H336ZM200-800v40h560v-40H200Zm124 120 12 40h288l12-40H324ZM200-800v40-40Z"/>
+										</svg>
+									</div>
+									<div>
+										<h3 class="text-md 2xl:text-lg font-bold">IoT & Building Automation</h3>
+										<p class="text-xs lg:text-lg">Making swarms of devices accessible to your team — on your terms, with battle-tested tools to surface insights and cut through waste.</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<a href="mailto:hi@anpin.fyi" class="section-4 gradient-blue-orange interactive-panel clickable-card">
+						<div class="h-full p-3 2xl:p-6 relative z-10 flex flex-col justify-between">
+							<div class="waveform-pattern absolute inset-0 opacity-20 z-0"></div>
+							<div class="diagonal-pattern absolute inset-0 opacity-20 z-0"></div>
+							<div class="dot-matrix absolute inset-0 z-0"></div>
+							
+							<p class="mb-0 text-base text-lg sm:text-sm 2xl:text-2xl">Looking for a consultant, collaborator, or dev-for-hire? I'm open to consulting, creative tech collaborations, and new gigs.</p>
+							
+							<div class="mt-2 lg:mt-2 text-center text-2xl md:text-xl font-bold gradient-text">
+								Let's Talk <span class="ml-2">→</span>
+							</div>
+						</div>
+					</a>
+					<div class="section-5 gradient-blue-orange interactive-panel">
+						<div class="h-full p-2 2xl:p-4 relative z-10">
+							<div class="grid-pattern absolute inset-0 opacity-20 z-0"></div>
+							<div class="binary-overlay absolute inset-0 z-0"></div>
+							<div class="flex justify-between items-center mb-2">
+								<h2 class="text-md 2xl:text-xl font-bold neo-text">Recent Posts</h2>
+								<a href="/blog" class="neo-btn">View All</a>
+							</div>
+							<div class="space-y-1 posts-container">
+								{
+									recentPosts.map((post, index) => (
+											<BlogCard
+												title={post.data.title}
+												description={post.data.description}
+												pubDate={post.data.pubDate}
+												url={`/blog/${post.slug}`}
+												tags={post.data.tags}
+												index={index}
+											/>
+									))
+								}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<script>
+// Mouse tracking for interactive elements
+document.addEventListener('DOMContentLoaded', () => {
+  // DOM Elements
+  const root = document.documentElement;
+  const mouseTracker = document.querySelector('.mouse-position-tracker') as HTMLElement;
+  const interactiveItems = document.querySelectorAll('.interactive-item');
+  const controlButtons = document.querySelectorAll('.control-btn');
+  const shapes = document.querySelectorAll('.shape') as NodeListOf<HTMLElement>;
+  const circleProgress = document.querySelector('.circle') as SVGPathElement;
+  
+  // Control elements
+  const animationToggle = document.getElementById('animationToggle') as HTMLElement;
+  const animationTooltip = animationToggle?.querySelector('.control-tooltip') as HTMLElement;
+  const themeToggle = document.getElementById('themeToggle') as HTMLElement;
+  const themeTooltip = themeToggle?.querySelector('.control-tooltip') as HTMLElement;
+  
+  // State
+  let animationsEnabled = true;
+  let darkTheme = true;
+
+  // Initialize settings from localStorage if available
+  function initializeSettings() {
+    // Check for animation preference
+    const storedAnimationPref = localStorage.getItem('animationsEnabled');
+    if (storedAnimationPref !== null) {
+      animationsEnabled = storedAnimationPref === 'true';
+      if (!animationsEnabled) {
+        root.classList.add('animations-disabled');
+        if (animationTooltip) animationTooltip.textContent = 'Animations: Off';
+      }
+    }
+    
+    // Check for theme preference
+    const storedThemePref = localStorage.getItem('darkTheme');
+    if (storedThemePref !== null) {
+      darkTheme = storedThemePref === 'true';
+      if (!darkTheme) {
+        root.classList.add('light-theme');
+        if (themeTooltip) themeTooltip.textContent = 'Theme: Light';
+        if (themeToggle?.querySelector('.theme-icon') instanceof HTMLElement) {
+          (themeToggle.querySelector('.theme-icon') as HTMLElement).style.transform = 'rotate(180deg)';
+        }
+      }
+    }
+  }
+  
+  // Control event listeners
+  function setupControlListeners() {
+    // Animation toggle
+    animationToggle?.addEventListener('click', () => {
+      animationsEnabled = !animationsEnabled;
+      localStorage.setItem('animationsEnabled', animationsEnabled.toString());
+      
+      if (animationsEnabled) {
+        root.classList.remove('animations-disabled');
+        if (animationTooltip) animationTooltip.textContent = 'Animations: On';
+        // Restart animations
+        initializeAnimations();
+      } else {
+        root.classList.add('animations-disabled');
+        stopAnimations();
+		if (animationTooltip) animationTooltip.textContent = 'Animations: Off';
+
+      }
+    });
+    
+    // Theme toggle
+    themeToggle?.addEventListener('click', () => {
+      darkTheme = !darkTheme;
+      localStorage.setItem('darkTheme', darkTheme.toString());
+      
+      if (darkTheme) {
+        root.classList.remove('light-theme');
+        if (themeTooltip) themeTooltip.textContent = 'Theme: Dark';
+        if (themeToggle?.querySelector('.theme-icon') instanceof HTMLElement) {
+          (themeToggle.querySelector('.theme-icon') as HTMLElement).style.transform = 'rotate(0deg)';
+        }
+      } else {
+        root.classList.add('light-theme');
+        if (themeTooltip) themeTooltip.textContent = 'Theme: Light';
+        if (themeToggle?.querySelector('.theme-icon') instanceof HTMLElement) {
+          (themeToggle.querySelector('.theme-icon') as HTMLElement).style.transform = 'rotate(180deg)';
+        }
+      }
+    });
+  }
+
+  // Initialize all animations
+  function initializeAnimations() {
+    if (!animationsEnabled) return;
+    
+    
+    // Add digital noise effect
+    addNoiseEffect();
+  }
+
+  function stopAnimations() {
+		if(animationsEnabled) return;
+		removeNoiseEffect();	
+	}
+
+  // Mouse position tracking
+  document.addEventListener('mousemove', (e) => {
+    if (!animationsEnabled) return;
+    
+    const x = e.clientX;
+    const y = e.clientY;
+
+    // Update mouse tracker position
+    if (mouseTracker) {
+      mouseTracker.style.left = `${x}px`;
+      mouseTracker.style.top = `${y}px`;
+    }
+
+    // Move geometric shapes
+    shapes.forEach((shape, index) => {
+      const factor = index + 1;
+      const offsetX = (x - window.innerWidth / 2) / (20 * factor);
+      const offsetY = (y - window.innerHeight / 2) / (20 * factor);
+      shape.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${offsetX + offsetY}deg)`;
+    });
+    
+    // Highlight effect for interactive items - no rotation, just subtle scaling
+    interactiveItems.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      
+      // Distance from mouse to center of item
+      const itemX = rect.left + rect.width / 2;
+      const itemY = rect.top + rect.height / 2;
+      
+      const distance = Math.sqrt(Math.pow(x - itemX, 2) + Math.pow(y - itemY, 2));
+      const maxDistance = 200;
+      
+      if (distance < maxDistance) {
+        const scale = 1 + 0.08 * (1 - distance / maxDistance); // Reduced scale factor
+        (item as HTMLElement).style.transform = `scale(${scale})`;
+        (item as HTMLElement).style.zIndex = '10';
+      } else {
+        (item as HTMLElement).style.transform = 'scale(1)';
+        (item as HTMLElement).style.zIndex = '1';
+      }
+    });
+
+    // Button hover effects for control buttons
+    controlButtons.forEach(btn => {
+      const rect = btn.getBoundingClientRect();
+      
+      if (x > rect.left && x < rect.right && y > rect.top && y < rect.bottom) {
+        (btn as HTMLElement).style.transform = 'translateY(-2px) scale(1.1)';
+        (btn as HTMLElement).style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.3)';
+      } else {
+        (btn as HTMLElement).style.transform = 'translateY(0) scale(1)';
+        (btn as HTMLElement).style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      }
+    });
+
+    // Circle progress animation
+    if (circleProgress) {
+      // Calculate distance from circle
+      const circleRect = circleProgress.getBoundingClientRect();
+      const circleX = circleRect.left + circleRect.width / 2;
+      const circleY = circleRect.top + circleRect.height / 2;
+      const circleDistance = Math.sqrt(Math.pow(x - circleX, 2) + Math.pow(y - circleY, 2));
+      const maxCircleDistance = 300;
+      
+      if (circleDistance < maxCircleDistance) {
+        const progress = 100 - Math.min(100, (circleDistance / maxCircleDistance) * 100);
+        circleProgress.setAttribute('stroke-dasharray', `${progress}, 100`);
+      }
+    }
+  });
+
+  // Initialize application
+  initializeSettings();
+  setupControlListeners();
+  initializeAnimations();
+});
+
+
+// Digital noise effect for glitch
+function addNoiseEffect() {
+  const noiseLayer = document.querySelector('.noise-layer') as HTMLElement;
+  if (!noiseLayer) return;
+  
+  // Clear any existing intervals
+  const noiseIntervalId = noiseLayer.getAttribute('data-interval-id');
+  if (noiseIntervalId) {
+    clearInterval(parseInt(noiseIntervalId));
+  }
+  
+  // Set new interval
+  const intervalId = setInterval(() => {
+    const noise = generateNoisePattern(20, 5);
+    noiseLayer.style.backgroundImage = `url(${noise})`;
+  }, 100);
+  
+  // Store interval ID for future cleanup
+  noiseLayer.setAttribute('data-interval-id', intervalId.toString());
+}
+
+function removeNoiseEffect() {
+	const noiseLayer = document.querySelector('.noise-layer') as HTMLElement;
+	if (!noiseLayer) return;
+	
+	const noiseIntervalId = noiseLayer.getAttribute('data-interval-id');
+	if (noiseIntervalId) {
+		clearInterval(parseInt(noiseIntervalId));
+		noiseLayer.removeAttribute('data-interval-id');
+		noiseLayer.style.backgroundImage = 'none';
+	}
+}
+
+// Generate a noise pattern
+function generateNoisePattern(size: number, intensity: number): string {
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return '';
+  
+  const imageData = ctx.createImageData(size, size);
+  const data = imageData.data;
+  
+  for (let i = 0; i < data.length; i += 4) {
+    const shouldAddNoise = Math.random() < 0.3;
+    const value = shouldAddNoise ? 255 * (intensity / 10) : 0;
+    
+    data[i] = value;     // R
+    data[i+1] = value;   // G
+    data[i+2] = value;   // B
+    data[i+3] = shouldAddNoise ? 30 : 0;  // Alpha
+  }
+  
+  ctx.putImageData(imageData, 0, 0);
+  return canvas.toDataURL('image/png');
+}
+
+</script>

@@ -11,6 +11,7 @@ mkShell {
    playwright
    playwright-driver
    playwright-test
+   windsurf.fhs
   ];
   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1;
   PLAYWRIGHT_BROWSERS_PATH="${pkgs.playwright-driver.browsers}";
