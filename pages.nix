@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
   
   offlineCache = fetchYarnDeps {
     yarnLock = ./yarn.lock;
-    hash = "sha256-j99PGTYWJIFxAj7bWBQ3e5H3qnaYwhLrkvrBT46dPR8=";
+    hash = "sha256-n1I7O3OVag3DP7XdVhred2NXfelfjfb1g02N1VKrC+c=";
     };
 
   nativeBuildInputs = [
