@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
 
-    cp -r dist/ $out
+    cp -r src/site/dist/ $out
 
     runHook postInstall
   '';
