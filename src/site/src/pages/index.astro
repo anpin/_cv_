@@ -8,7 +8,7 @@ const posts = await getCollection('blog', ({ data }) => {
 });
 
 const recentPosts = posts
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .sort((a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 1);
 ---
 <Layout title="Anpin">
@@ -154,7 +154,7 @@ const recentPosts = posts
 							</div>
 							<div class="space-y-1 posts-container">
 								{
-									recentPosts.map((post, index) => (
+									recentPosts.map((post: any, index: number) => (
 											<BlogCard
 												title={post.data.title}
 												description={post.data.description}

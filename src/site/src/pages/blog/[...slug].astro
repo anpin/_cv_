@@ -4,13 +4,13 @@ import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((post) => ({
+  return posts.map((post: any) => ({
     params: { slug: post.slug },
     props: { post },
   }));
 }
 
-const { post } = Astro.props;
+const { post }: { post: any } = Astro.props;
 const { Content } = await post.render();
 ---
 
@@ -24,7 +24,7 @@ const { Content } = await post.render();
           <div class="flex flex-wrap gap-2 items-center mb-8">
             <time class="text-gray-300">{post.data.pubDate.toLocaleDateString()}</time>
             <div class="flex flex-wrap gap-2">
-              {post.data.tags.map((tag) => (
+              {post.data.tags.map((tag: string) => (
                 <span class="px-3 py-1 bg-opacity-20 bg-base-200 text-base-content rounded-md text-sm">#{tag}</span>
               ))}
             </div>

@@ -12,10 +12,8 @@
     "start":  "yarn workspace site start",
     "generate-pdf": "yarn workspace site generate-pdf",
     "generate-pdf:ci": "yarn workspace site generate-pdf:ci",
-    "prebuild": "yarn --offline astro check && tsc --noEmit",
-    "build": "yarn workspace sketches build && yarn workspace site build && yarn --offline generate-pdf:ci && astro build",
-    "build:light": "FORCE_THEME=light astro build",
-    "build:dark": "FORCE_THEME=dark astro build"
+    "prebuild": "yarn --offline astro check",
+    "build": "yarn workspace site build && yarn --offline generate-pdf:ci && astro build"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",

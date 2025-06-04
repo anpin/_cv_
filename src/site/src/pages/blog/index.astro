@@ -10,11 +10,11 @@ const posts = await getCollection('blog', ({ data }) => {
 });
 
 const sortedPosts = posts.sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
 // Get unique tags from all posts
-const allTags = [...new Set(posts.flatMap(post => post.data.tags))].sort();
+const allTags: any[] = [...new Set(posts.flatMap((post) => post.data.tags as string[]))].sort();
 ---
 
 <Layout title="Blog | Anpin">
@@ -25,7 +25,7 @@ const allTags = [...new Set(posts.flatMap(post => post.data.tags))].sort();
         <!-- Left column: Blog posts -->
         <div class="blog-posts-column">
           {
-            sortedPosts.map((post, index) => (
+            sortedPosts.map((post: any, index: number) => (
               <BlogCard
                 title={post.data.title}
                 description={post.data.description}
