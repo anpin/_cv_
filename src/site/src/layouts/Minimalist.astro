@@ -3,6 +3,7 @@ import "@fontsource/dm-mono";
 import Download from "../components/Download.astro";
 import Key from "../components/Key.astro";
 import "../styles.css";
+import "../cv-styles.css";
 
 type Props = {
   frontmatter: {
@@ -18,12 +19,6 @@ const { PDF_VIEW, FORCE_THEME = "" } = import.meta.env;
 
 const { title, noIndex, description, pdfLink, publickey } = Astro.props
   .frontmatter as Props["frontmatter"];
-
-// Firstname Lastname -> ['F', 'L']
-// const initials = title
-//   .split(" ")
-//   .map(([initial]) => initial!.toUpperCase())
-//   .slice(0, 2);
 ---
 
 <!doctype html>
@@ -31,15 +26,24 @@ const { title, noIndex, description, pdfLink, publickey } = Astro.props
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description || title} />
     {noIndex && <meta name="robots" content="noindex" />}
     <title>{title}</title>
   </head>
-  <body class={!PDF_VIEW ? "bg-slate-500 dark:bg-slate-900 sm:my-14" : ""}>
-    <div class="container mx-auto flex justify-center">
-      <article class="minimalist relative">
+  <body class={!PDF_VIEW ? "bg-futuristic" : ""}>
+    {!PDF_VIEW && 
+    (<div class="controls-menu">
+      <button id="themeToggle" class="control-btn" aria-label="Toggle Theme">
+        <span class="control-icon theme-icon"></span>
+        <span class="control-tooltip" style="left: 46px">Theme: Dark</span>
+      </button>
+    </div>)
+    }
+
+    <div class="container mx-auto flex justify-center py-8">
+      <article class="cv-container relative">
         {
           !PDF_VIEW && (
             <div class="not-prose absolute right-4 top-4">
@@ -57,6 +61,38 @@ const { title, noIndex, description, pdfLink, publickey } = Astro.props
         <slot />
       </article>
     </div>
-    <style></style>
+
+    <script>
+      // Simple theme toggle without animations
+      document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('themeToggle');
+        const themeTooltip = themeToggle?.querySelector('.control-tooltip');
+        let darkTheme = true;
+
+        // Initialize theme from localStorage
+        const storedThemePref = localStorage.getItem('darkTheme');
+        if (storedThemePref !== null) {
+          darkTheme = storedThemePref === 'true';
+          updateTheme();
+        }
+
+        // Theme toggle functionality
+        themeToggle?.addEventListener('click', () => {
+          darkTheme = !darkTheme;
+          localStorage.setItem('darkTheme', String(darkTheme));
+          updateTheme();
+        });
+
+        function updateTheme() {
+          if (darkTheme) {
+            document.documentElement.classList.remove('light-theme');
+            if (themeTooltip) themeTooltip.textContent = 'Theme: Dark';
+          } else {
+            document.documentElement.classList.add('light-theme');
+            if (themeTooltip) themeTooltip.textContent = 'Theme: Light';
+          }
+        }
+      });
+    </script>
   </body>
 </html>

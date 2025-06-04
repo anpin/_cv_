@@ -67,7 +67,7 @@ Contributed to reviving and stabilizing [tweag/jupyenv](https://github.com/tweag
 
 ### Community Engagement
 - Contributed to [Budka Tbilisi](https://www.instagram.com/budkatbilisi/), a community-driven artist-run space supporting cultural events, exhibitions, and experimental performances. Assisted with technical infrastructure and event production.
-- Participated in open calls and discussions hosted by scanlines.xyz, contributing experimental video works and exploring community-driven media arts. Explored feedback-based generative audio visual works using vvvv, focusing on emergent forms and cybernetic aesthetics in audiovisual performance contexts.
+- Participated in open calls and discussions hosted by [scanlines.xyz](http://scanlines.xyz), contributing experimental video works and exploring community-driven media arts. Explored feedback-based generative audio visual works using vvvv, focusing on emergent forms and cybernetic aesthetics in audiovisual performance contexts.
 
 ## Education
 
