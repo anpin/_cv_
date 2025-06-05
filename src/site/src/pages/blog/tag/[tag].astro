@@ -26,28 +26,45 @@ const allTags: string[] = [...new Set(posts.flatMap((post: any) => post.data.tag
 ---
 
 <Layout title={`${tag} Posts | Anpin`}>
-  <main class="container mx-auto px-4 py-8">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl font-bold mb-8">Posts tagged with "{tag}"</h1>
-      
-      <SearchBar />
-      
-      <TagCloud tags={allTags} activeTag={tag} />
-      
-      <div class="grid grid-cols-1 gap-6">
-        {
-          filteredPosts.map((post: any, index: number) => (
-            <BlogCard
-              title={post.data.title}
-              description={post.data.description}
-              pubDate={post.data.pubDate}
-              url={`/blog/${post.slug}`}
-              tags={post.data.tags}
-              index={index}
-            />
-          ))
-        }
+  <div class="bg-futuristic min-h-screen">
+    
+    <main class="container mx-auto px-4 py-4">
+      <div class="blog-layout">
+        <!-- Left column: Blog posts -->
+        <div class="blog-posts-column">
+          {
+            filteredPosts.map((post: any, index: number) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                pubDate={post.data.pubDate}
+                url={`/blog/${post.slug}`}
+                tags={post.data.tags}
+                index={index}
+              />
+            ))
+          }
+        </div>
+        
+        <!-- Right column: Header and controls -->
+        <div class="blog-sidebar gap-2">
+          <div class="blog-controls p-4 gradient-orange-blue rounded-lg">
+              <h1 class="text-3xl font-bold mb-3">Blog</h1>
+              <p class="text-sm text-gray-300">Thoughts on functional programming, IoT, and creative technology</p>
+              <a href="/" class="neo-btn block w-full text-center mt-4">About me</a>
+            <SearchBar />
+            <TagCloud tags={allTags} activeTag={tag} />
+          </div>
+
+          <div class="blog-controls gradient-orange-blue p-4 rounded-lg">
+            
+              <p class="mb-0 text-base text-lg sm:text-sm 2xl:text-2xl">Looking for a consultant, collaborator, or dev-for-hire? I'm open to consulting, creative tech collaborations, and new gigs.</p>
+                <a href="mailto:hi@anpin.fyi"  class="mt-2 lg:mt-2 text-center text-2xl md:text-xl font-bold gradient-text">
+                  Let's Talk <span class="ml-2">→</span>
+                </a>
+            
+          </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </Layout>

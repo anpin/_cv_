@@ -20,7 +20,7 @@ const allTags: any[] = [...new Set(posts.flatMap((post) => post.data.tags as str
 <Layout title="Blog | Anpin">
   <div class="bg-futuristic min-h-screen">
     
-    <main class="container mx-auto px-4 py-12">
+    <main class="container mx-auto px-4 py-4">
       <div class="blog-layout">
         <!-- Left column: Blog posts -->
         <div class="blog-posts-column">
@@ -39,7 +39,7 @@ const allTags: any[] = [...new Set(posts.flatMap((post) => post.data.tags as str
         </div>
         
         <!-- Right column: Header and controls -->
-        <div class="blog-sidebar gap-4">
+        <div class="blog-sidebar gap-2">
           <div class="blog-controls p-4 gradient-orange-blue rounded-lg">
               <h1 class="text-3xl font-bold mb-3">Blog</h1>
               <p class="text-sm text-gray-300">Thoughts on functional programming, IoT, and creative technology</p>
@@ -49,12 +49,12 @@ const allTags: any[] = [...new Set(posts.flatMap((post) => post.data.tags as str
           </div>
 
           <div class="blog-controls gradient-orange-blue p-4 rounded-lg">
-            <div class="gradient-blue-orange clickable-card">
+            
               <p class="mb-0 text-base text-lg sm:text-sm 2xl:text-2xl">Looking for a consultant, collaborator, or dev-for-hire? I'm open to consulting, creative tech collaborations, and new gigs.</p>
                 <a href="mailto:hi@anpin.fyi"  class="mt-2 lg:mt-2 text-center text-2xl md:text-xl font-bold gradient-text">
                   Let's Talk <span class="ml-2">→</span>
                 </a>
-            </div>            
+            
           </div>
       </div>
     </main>
