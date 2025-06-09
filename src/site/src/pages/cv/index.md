@@ -8,9 +8,9 @@ publickey: "/publickey.asc"
 
 # Pavel Anpin, 1992
 
-**Full-Stack Technologist | IoT Infra by Day, Generative Visuals by Night**
+**Senior Software Engineer | Functional Programming Advocate | Distributed Systems Builder**
 
-***From F# backends and Nix-based deployments to glitchy feedback loops — one state machine at a time.***
+***Specializing in F# backend architectures, scalable distributed systems, reproducible infrastructure***
 
 https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi)
 
@@ -19,11 +19,14 @@ https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi)
 
 ## Summary 
 
-Innovative and adaptable technical founder with deep experience across software engineering, smart building systems, and audiovisual technologies. I bring a practical mindset to solving complex problems — from building scalable, self-hosted platforms to integrating creative and embedded systems in real-world environments.
+
+Senior Software Engineer with 10+ years of experience across software engineering, smart building systems, and audiovisual technologies. I bring a practical mindset to solving complex problems — from building scalable, self-hosted platforms to integrating creative and embedded systems in real-world environments. 
+
+Proven success in building high-performance, scalable, and maintainable systems across domains.
 
 Passionate about functional programming, reproducibility, and distributed architectures. I thrive in collaborative settings where technical depth meets human-centered design. Always open to new challenges — whether consulting, partnering on ambitious ideas, or supporting teams that value thoughtful engineering.
 
-In my spare time, I enjoy cycling, baking, exploring generative visuals, and reflecting on the nature of consciousness.
+In my spare time, I enjoy cycling,  exploring generative visuals, baking and reflecting on the nature of consciousness.
 
 ## Work Experience
 
@@ -31,10 +34,10 @@ In my spare time, I enjoy cycling, baking, exploring generative visuals, and ref
 
 #### Technical Founder | Dec 2022 - Present
 
-Co-founded a smart-building software startup specializing in incident prevention, energy usage tracking, cost minimization, and enhanced satisfaction for teams and clients. Developed robust software solutions including intuitive dashboards, proactive monitoring, automated energy management systems, and comprehensive analytics. Managed client deployments, backend services, and provided direct technical support. Employed modern technologies (NixOS, TimescaleDB, F#, Akka.Net, Giraffe, HTMX, DaisyUI) within a fully self-hosted, declarative NixOS infrastructure (OpenResty/nginx, Authentik, Attic, Forgejo, PostgreSQL, Clickhouse, Grafana/Mimir/Loki, Minio, Plausible, restic).
+Co-founded a smart-building software startup specializing in incident prevention, energy usage tracking, cost minimization, and enhanced satisfaction for teams and clients. Architected and delivered full-stack F# applications with Fable, Giraffe, Akka.NET and TimescaleDB/PostgreSQL. Designed greenfield systems including real-time dashboards, automation rule engines and offline-first voice control over WebRTC. Led deployment automation via Nix/NixOS using declarative containers. Built and maintained self-hosted infrastructure with PostgreSQL, Grafana, Clickhouse, and more. Ensured system reliability, performance, and cost efficiency.
 
-### Independent Contractor
-#### Dec 2016 - Present
+### [Independent Contractor](https://anpin.fyi)
+#### Self-employed | Dec 2016 - Present
 
 Provided expert consulting services and bespoke software solutions across diverse industries, specializing in audiovisual installations, automation systems, and full-stack application development. Delivered and maintained cross-platform apps built with Xamarin.Forms and ASP.NET, transitioning them smoothly to MAUI/Avalonia with ASP.NET Core, while ensuring robust CI/CD practices and comprehensive testing. Transitioned client systems from C# to functional programming using F# and modern frameworks (Akka.Net, Giraffe, Avalonia), significantly enhancing maintainability and efficiency. Mastered a wide array of technologies including C#, F#, Fable, NixOS, Rust (embedded), PostgreSQL/TimescaleDB, Event Sourcing, CQRS, WebRTC, Astro, and advanced multimedia frameworks, demonstrating adaptability in tackling complex technical challenges.
 
