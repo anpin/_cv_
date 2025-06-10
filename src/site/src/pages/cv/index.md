@@ -14,7 +14,7 @@ publickey: publickey.asc
 
 https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi)
 
-[github:anpin](https://github.com/anpin/) | [matrix:anpin](https://matrix.to/#/@anpin:matrix.org) | [telegram:anpin](https://t.me/anpin)
+[github:anpin](https://github.com/anpin/) | [matrix:anpin](https://matrix.to/#/@anpin:matrix.org)
 
 
 ## Summary 
