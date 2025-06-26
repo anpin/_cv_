@@ -20,7 +20,7 @@ https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi)
 ## Summary 
 
 
-Senior Software Engineer with 10+ years of experience across software engineering, smart building systems, and audiovisual technologies. I bring a practical mindset to solving complex problems — from building scalable, self-hosted platforms to integrating creative and embedded systems in real-world environments. 
+Senior Software Engineer with 10+ years of experience delivering turnkey solutions in smart buildings, AV tech, and embedded systems — specializing in distributed, reproducible, and reactive architectures deployed in real-world environments.
 
 Proven success in building high-performance, scalable, and maintainable systems across domains.
 
