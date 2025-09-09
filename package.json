@@ -13,7 +13,7 @@
     "generate-pdf": "yarn workspace site generate-pdf",
     "generate-pdf:ci": "yarn workspace site generate-pdf:ci",
     "prebuild": "yarn --offline astro check",
-    "build": "yarn workspace site build && yarn --offline generate-pdf:ci && astro build"
+    "build": "yarn --offline generate-pdf:ci && yarn workspace site build && astro build"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
