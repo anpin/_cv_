@@ -8,25 +8,22 @@ publickey: "/publickey.asc"
 
 # Pavel Anpin, 1992
 
-**Senior Software Engineer | Functional Programming Advocate | Distributed Systems Builder**
+**Senior Software Engineer | Functional Programming | Distributed Systems**
 
-***Specializing in F# backend architectures, scalable distributed systems, reproducible infrastructure***
 
-https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi)
-
-[github:anpin](https://github.com/anpin/) | [matrix:anpin](https://matrix.to/#/@anpin:matrix.org)
+https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi) | [github:anpin](https://github.com/anpin/) | [matrix:anpin](https://matrix.to/#/@anpin:matrix.org)
 
 
 ## Summary 
 
 
-Senior Software Engineer with 10+ years of experience delivering turnkey solutions in smart buildings, AV tech, and embedded systems — specializing in distributed, reproducible, and reactive architectures deployed in real-world environments.
+Senior Software Engineer with 12+ years of experience delivering turnkey solutions in smart buildings, audio visual installations and cyber-physical systems.
 
 Proven success in building high-performance, scalable, and maintainable systems across domains.
 
-Passionate about functional programming, reproducibility, and distributed architectures. I thrive in collaborative settings where technical depth meets human-centered design. Always open to new challenges — whether consulting, partnering on ambitious ideas, or supporting teams that value thoughtful engineering.
+Passionate about functional programming, reproducibility, and distributed architectures. Always open to new challenges - whether consulting, partnering on ambitious ideas, or supporting teams that value thoughtful engineering.
 
-In my spare time, I enjoy cycling,  exploring generative visuals, baking and reflecting on the nature of consciousness.
+In my spare time, I enjoy cycling, exploring generative visuals, baking and reflecting on the nature of consciousness.
 
 ## Work Experience
 
@@ -61,7 +58,7 @@ Provided pre-sales engineering support, coordinating audiovisual projects and li
 Advanced from intern to project engineer, specializing in the design, programming, and commissioning of tailored audiovisual solutions. Directly communicated with clients and contractors, delivering reliable installations and comprehensive post-installation training. Demonstrated adaptability, technical skill, and strong commitment to delivering solutions customized to meet diverse client requirements.
 
 ### Open Source Contributions
-
+- [Ported](https://github.com/akkadotnet/Akka.Management/pull/3365) Akka.NET Management’s DNS-based service discovery feature from the original Akka (Scala) implementation, adding async DNS provider support for A/AAAA/SRV records, full IPv6 compatibility, and comprehensive examples, tests, and documentation for cluster bootstrapping.
 - Maintainer of multiple [nixos/nixpkgs](https://github.com/NixOS/nixpkgs/pulls?q=author%3Aanpin) packages and modules, improving reproducibility and developer tooling.
 - Created a popular [context menu plugin](https://github.com/anpin/ContextMenuContainer) for Xamarin.Forms with >50 GitHub stars and several thousand NuGet downloads.
 - Developed and maintained CI/CD pipelines for the [Perfect-Fifth](https://github.com/mark-gerarts/perfect-fifth) project.
