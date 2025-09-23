@@ -74,7 +74,7 @@ In my spare time, I enjoy learning new things, cycling, exploring generative vis
 
 ## Skills
 
-- **F# / C# / .NET:** over 10 years of experience with .NET (.NET CF, .NET Framework, .NET Core, dotnet), Akka.NET, Giraffe, Fable, ASP.NET and ASP.NET Core, CQRS, Event Sourcing, SignalR, MAUI, Xamarin.Forms, Avalonia, WPF, XAML, MSBuild, FAKE, Paket, Fable, Sutil, Akkling, FsharpPlus, OpenID, Azure B2C, MSAL, LDAP, OAuth, JWT, OpenAPI, REST, gRPC, json, xml, protobuf, SSL/TLS
+- **F# / C# / .NET:** over 10 years of experience with .NET (.NET CF, .NET Framework, .NET Core, dotnet), Akka.NET, Giraffe, Fable, ASP.NET and ASP.NET Core, CQRS, Event Sourcing, SignalR, MAUI, Xamarin.Forms, Avalonia, WPF, SkiaSharp, XAML, MSBuild, FAKE, Paket, Fable, Sutil, Akkling, FsharpPlus, OpenID, Azure B2C, MSAL, LDAP, OAuth, JWT, OpenAPI, REST, gRPC, json, xml, protobuf, SSL/TLS
 
 
 - **Architecture & Delivery:** Distributed systems, Actors, DDD, FP & OOP, DRY, SOLID, category theory, algorithms, linear algebra, statistics, machine learning, optimization, native mobile app development, embedded development
@@ -83,7 +83,7 @@ In my spare time, I enjoy learning new things, cycling, exploring generative vis
 
 - **Industry Knowledge:** PostgreSQL / TimescaleDB, ClickHouse, Grafana, Prometheus, OpenTelemetry, nginx, Redis, MQTT, RabbitMQ, WebRTC, WebSockets, ssh, tmux, wireguard, etc
 
-- **Additional Programing languages**: Lua, Rust, C++, C, ESP-IDF, Netlinx, JavaScript, TypeScript, Bash, PowerShell, Nix
+- **Additional Programing languages and technologies**: Lua, Rust, C++, C, ESP-IDF, Netlinx, JavaScript, TypeScript, Bash, PowerShell, Nix, Shaders (HLSL, GLSL, SPIR-V), p5.js, SuperCollider, vvvv, TouchDesigner, MaxMSP/pd  
 
 
 ## Work Experience
