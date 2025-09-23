@@ -13,11 +13,9 @@ sidebar:
     audiovisual platforms, and distributed systems.
   details:
     - label: "Location"
-      value: "Tbilisi, Georgia (UTC+04:00)"
-    - label: "Citizenship"
-      value: "Russian"
+      value: "Rio de Janeiro, Brazil (UTC-03:00)"
     - label: "Languages"
-      value: "English (C1), Russian (Native)"
+      value: "English, Russian, Portuguese"
   contact:
     - label: "Email"
       value: "pavel@anpin.fyi"
@@ -35,24 +33,26 @@ sidebar:
     - "Functional Programming"
     - "Distributed Systems"
     - "Event Sourcing & CQRS"
-    - "Real-time Dashboards"
     - "Nix & NixOS"
     - "Akka.NET"
-    - "WebRTC"
-    - "Infrastructure Automation"
+    - "IoT"
+    - "Full-stack development"
+    - "Embedded development"
+    - "Vibe coding cleanup"
+    - "Interactive Installations"
+    - "Control systems"
+    - "Audiovisual installations"
   highlights:
     - title: "Recent Focus"
       items:
         - "Incident prevention and energy intelligence for smart buildings."
+        - "Model Predictive Control"
         - "Automation rule engines with offline-first voice control."
     - title: "Strengths"
       items:
         - "End-to-end product delivery with resilient distributed architectures."
         - "Hands-on DevOps with reproducible Nix/NixOS workflows."
-    - title: "Community"
-      items:
-        - "Open-source maintainer across Akka.NET and NixOS ecosystems."
-        - "Active collaborator in media arts and experimental tech communities."
+        - "Migration of legacy systems to modern architectures."
 ---
 
 # Pavel Anpin, 1992
@@ -63,13 +63,28 @@ sidebar:
 ## Summary
 
 
-Senior Software Engineer with 12+ years of experience delivering turnkey solutions in smart buildings, audio visual installations and cyber-physical systems.
+Senior Software Engineer with 12+ years designing event-driven platforms for smart buildings, multimedia installations and other cyber-physical systems.
 
 Proven success in building high-performance, scalable, and maintainable systems across domains.
 
-Passionate about functional programming, reproducibility, and distributed architectures. Always open to new challenges - whether consulting, partnering on ambitious ideas, or supporting teams that value thoughtful engineering.
+Passionate about functional programming, reproducibility, and distributed architectures. Always open to new challenges - whether consulting, partnering on ambitious ideas, or supporting teams that value thoughtful engineering. 
 
-In my spare time, I enjoy cycling, exploring generative visuals, baking and reflecting on the nature of consciousness.
+In my spare time, I enjoy learning new things, cycling, exploring generative visuals, baking and reflecting on the nature of consciousness.
+
+
+## Skills
+
+- **F# / C# / .NET:** over 10 years of experience with .NET (.NET CF, .NET Framework, .NET Core, dotnet), Akka.NET, Giraffe, Fable, ASP.NET and ASP.NET Core, CQRS, Event Sourcing, SignalR, MAUI, Xamarin.Forms, Avalonia, WPF, XAML, MSBuild, FAKE, Paket
+
+
+- **Architecture & Delivery:** Distributed systems, actor-model design, domain-driven design, functional & object-oriented design, event-driven automation, offline-first experiences
+
+- **DevOps & Infrastructure:** Nix / NixOS, GitHub Actions, Azure Pipelines, Docker, cloud (Azure, AWS), Linux administration, self-hosted infrastructure, network administration,  
+
+- **Industry Knowledge:** PostgreSQL / TimescaleDB, ClickHouse, Grafana, Prometheus, OpenTelemetry, nginx, Redis, MQTT, WebRTC, WebSockets etc
+
+- **Additional Programing languages**: Lua, Rust, C++, C, ESP-IDF, Netlinx, JavaScript, TypeScript, Bash, Nix
+
 
 ## Work Experience
 
