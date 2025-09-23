@@ -74,7 +74,7 @@ In my spare time, I enjoy learning new things, cycling, exploring generative vis
 
 ## Skills
 
-- **F# / C# / .NET:** over 10 years of experience with .NET (.NET CF, .NET Framework, .NET Core, dotnet), Akka.NET, Giraffe, Fable, ASP.NET and ASP.NET Core, CQRS, Event Sourcing, SignalR, MAUI, Xamarin.Forms, Avalonia, WPF, XAML, MSBuild, FAKE, Paket, Fable, Sutil, Akkling, FsharpPlus
+- **F# / C# / .NET:** over 10 years of experience with .NET (.NET CF, .NET Framework, .NET Core, dotnet), Akka.NET, Giraffe, Fable, ASP.NET and ASP.NET Core, CQRS, Event Sourcing, SignalR, MAUI, Xamarin.Forms, Avalonia, WPF, XAML, MSBuild, FAKE, Paket, Fable, Sutil, Akkling, FsharpPlus, OpenID, Azure B2C, MSAL, LDAP, OAuth, JWT, OpenAPI
 
 
 - **Architecture & Delivery:** Distributed systems, actor-model design, domain-driven design (DDD), functional & object-oriented design, category theory, algorithms, linear algebra, statistics, machine learning, optimization
