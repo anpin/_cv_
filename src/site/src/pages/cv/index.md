@@ -4,6 +4,55 @@ description: CV of Pavel Anpin.
 layout: ../../layouts/Minimalist.astro
 pdfLink: "/pavel_anpin_cv.pdf"
 publickey: "/publickey.asc"
+sidebar:
+  photo:
+    alt: "Portrait placeholder for Pavel Anpin"
+    initials: "PA"
+  intro: >-
+    Senior Software Engineer delivering reliable software for smart buildings,
+    audiovisual platforms, and distributed systems.
+  details:
+    - label: "Location"
+      value: "Tbilisi, Georgia (UTC+04:00)"
+    - label: "Citizenship"
+      value: "Russian"
+    - label: "Languages"
+      value: "English (C1), Russian (Native)"
+  contact:
+    - label: "Email"
+      value: "pavel@anpin.fyi"
+      href: "mailto:pavel@anpin.fyi"
+    - label: "Website"
+      value: "anpin.fyi"
+      href: "https://anpin.fyi"
+    - label: "GitHub"
+      value: "@anpin"
+      href: "https://github.com/anpin"
+    - label: "Matrix"
+      value: "@anpin:matrix.org"
+      href: "https://matrix.to/#/@anpin:matrix.org"
+  keywords:
+    - "Functional Programming"
+    - "Distributed Systems"
+    - "Event Sourcing & CQRS"
+    - "Real-time Dashboards"
+    - "Nix & NixOS"
+    - "Akka.NET"
+    - "WebRTC"
+    - "Infrastructure Automation"
+  highlights:
+    - title: "Recent Focus"
+      items:
+        - "Incident prevention and energy intelligence for smart buildings."
+        - "Automation rule engines with offline-first voice control."
+    - title: "Strengths"
+      items:
+        - "End-to-end product delivery with resilient distributed architectures."
+        - "Hands-on DevOps with reproducible Nix/NixOS workflows."
+    - title: "Community"
+      items:
+        - "Open-source maintainer across Akka.NET and NixOS ecosystems."
+        - "Active collaborator in media arts and experimental tech communities."
 ---
 
 # Pavel Anpin, 1992
@@ -11,10 +60,7 @@ publickey: "/publickey.asc"
 **Senior Software Engineer | Functional Programming | Distributed Systems**
 
 
-https://anpin.fyi | [pavel@anpin.fyi](mailto:pavel@anpin.fyi) | [github:anpin](https://github.com/anpin/) | [matrix:anpin](https://matrix.to/#/@anpin:matrix.org)
-
-
-## Summary 
+## Summary
 
 
 Senior Software Engineer with 12+ years of experience delivering turnkey solutions in smart buildings, audio visual installations and cyber-physical systems.
@@ -62,7 +108,7 @@ Advanced from intern to project engineer, specializing in the design, programmin
 - Maintainer of multiple [nixos/nixpkgs](https://github.com/NixOS/nixpkgs/pulls?q=author%3Aanpin) packages and modules, improving reproducibility and developer tooling.
 - Created a popular [context menu plugin](https://github.com/anpin/ContextMenuContainer) for Xamarin.Forms with >50 GitHub stars and several thousand NuGet downloads.
 - Developed and maintained CI/CD pipelines for the [Perfect-Fifth](https://github.com/mark-gerarts/perfect-fifth) project.
-Contributed to reviving and stabilizing [tweag/jupyenv](https://github.com/tweag/jupyenv), enabling better Nix-based Jupyter environments.
+- Contributed to reviving and stabilizing [tweag/jupyenv](https://github.com/tweag/jupyenv), enabling better Nix-based Jupyter environments.
 - Helped resolve crashes in the [Akkling](https://github.com/Horusiath/Akkling) F# library after upstream package updates, supporting its continued use in production Akka.NET applications.
 
 ### Community Engagement
