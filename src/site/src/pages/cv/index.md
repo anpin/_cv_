@@ -38,11 +38,7 @@ Proven success in building high-performance, scalable, and maintainable systems 
 
 Passionate about functional programming, reproducibility, and distributed architectures. Always open to new challenges - whether consulting, partnering on ambitious ideas, or supporting teams that value thoughtful engineering. 
 
-In my spare time, I enjoy learning new things, cycling, exploring generative visuals, baking and reflecting on the nature of consciousness.
-
-
 ## Skills
-
  
 - **Languages:** F#, C#, SQL, C++, Nix, Rust, Lua, Bash, PowerShell, Python, HTML, CSS, JavaScript, Netlinx, ESP-IDF, Shaders (HLSL, GLSL)
 
@@ -56,7 +52,7 @@ In my spare time, I enjoy learning new things, cycling, exploring generative vis
 
 - **Theoretical:** Category theory, algorithms, digital signal processing, linear algebra, statistics, machine learning, optimization, SCRUM/Agile/Kanban, neural networks, computer networks, control theory
 
-- **Live media tools:** vvvv, TouchDesigner, MaxMSP/pd, SuperCollider, Ableton Live, Crestron, Biamp, Dante 
+- **Live media tools:** vvvv, openFrameworks, MaxMSP/pd, SuperCollider, Ableton Live, Crestron, Biamp, Dante 
 
 
 ## Work Experience
@@ -64,43 +60,37 @@ In my spare time, I enjoy learning new things, cycling, exploring generative vis
 ### [Alerio](https://alerio.net/?ref=anpin.fyi)
 
 #### Technical Founder | Dec 2022 - Present
-
-Co-founded a smart-building software startup specializing in incident prevention, energy usage tracking, cost minimization, and enhanced satisfaction for teams and clients. Architected and delivered full-stack F# applications with Fable, Giraffe, Akka.NET and TimescaleDB/PostgreSQL. Designed greenfield systems including real-time dashboards, automation rule engines and offline-first voice control over WebRTC. Led deployment automation via Nix/NixOS using declarative containers. Built and maintained self-hosted infrastructure with PostgreSQL, Grafana, Clickhouse, and more. Ensured system reliability, performance, and cost efficiency.
+- Shipped real-time building control and monitoring platform for incidents, energy usage, and costs.
+- Prototyped a C# solution, gathered market and customer feedback and turned it into a full-stack F# platform (Giraffe/ASP.NET Core, Akka.NET, SignalR, Fable, HTMX, Vega, TimescaleDB/PostgreSQL).
+- Implemented reproducible, cost-efficient infrastructure with Nix/NixOS and a self-hosted stack (Grafana, ClickHouse, Forgejo, Authentik).
+- Built DSL for efficient hardware integration, runtime module registration from text files, automation rules and data pipelines.
+- Implemented reactive graph visualization for arbitary data from modules: 50000 sparse datapoints loaded in less than 5 seconds in a WebGL rendered graph. 
+- Implemented offline-first voice control over WebRTC for on-prem devices with self-hosted STT/TTS/LLM pipeline for user intent recognition and response, including smart speaker firmware for ESP32.
+- Product website and marketing materials, custom build/publish pipeline for A/B testing with openresty serving static files built from different git branches.
 
 ### [Independent Contractor](https://anpin.fyi)
 #### Self-employed | Dec 2016 - Present
 
-Provided expert consulting services and bespoke software solutions across diverse industries, specializing in audiovisual installations, automation systems, and full-stack application development. Delivered and maintained cross-platform apps built with Xamarin.Forms and ASP.NET, transitioning them smoothly to MAUI/Avalonia with ASP.NET Core, while ensuring robust CI/CD practices and comprehensive testing. Transitioned client systems from C# to functional programming using F# and modern frameworks (Akka.NET, Giraffe, Avalonia), significantly enhancing maintainability and efficiency. Mastered a wide array of technologies including C#, F#, Fable, NixOS, Rust (embedded), PostgreSQL/TimescaleDB, Event Sourcing, CQRS, WebRTC, Astro, and advanced multimedia frameworks, demonstrating adaptability in tackling complex technical challenges.
+Delivered bespoke software solutions for IoT, AV and enterprise domains. Built and maintained cross-platform apps (Xamarin.Forms/MAUI, Avalonia, ASP.NET Core), implemented CI/CD pipelines, and migrated client systems from C# to F# using Akka.NET, Giraffe, and Avalonia—improving maintainability and scalability. Worked across a wide stack including PostgreSQL/TimescaleDB, Event Sourcing, CQRS, WebRTC, NixOS, and embedded Rust.
 
+Highlights:
+- Velonetic: Presentation room control system with custom CMS for Tizen signage, real-time web control, scheduling, transcoding, and integration with Crestron/Biamp/Dante.
+- BrightlinkAV: ASP.NET Core backend with Xamarin.Forms → MAUI migration, Azure cloud, and CI/CD automation.
+ 
 
-### [IMS Group Ltd](https://www.facebook.com/imsgroup.pro/) 
+### Past Roles
+#### 2013–2017
 
-#### Chief Engineer | Jun 2016 - Sep 2017 (1 yr 4 mos)
-
-Led engineering workflow development, provided team training, and supervised project execution for a systems integrator serving the hospitality industry. Managed comprehensive project lifecycles from design through installation and client handover, specializing in advanced audiovisual systems integration to ensure high-quality results and client satisfaction.
-
-### [AudioVideoSystems Ltd](https://audioprofi.ru/) 
-
-#### Project Engineer | Dec 2015 - May 2016 (6 mos)
-
-Provided pre-sales engineering support, coordinating audiovisual projects and liaising closely with clients and contractors. Supported project teams through technical consultations and structured client communication, managing challenging project scenarios effectively.
-
-### [8 Ohm Ltd](https://8ohm.ru/) 
-
-#### Project Engineer | Aug 2013 - Nov 2015 (2 yrs 4 mos)
-
-Advanced from intern to project engineer, specializing in the design, programming, and commissioning of tailored audiovisual solutions. Directly communicated with clients and contractors, delivering reliable installations and comprehensive post-installation training. Demonstrated adaptability, technical skill, and strong commitment to delivering solutions customized to meet diverse client requirements.
+Progressed from intern to Chief Engineer across [8 Ohm Ltd](https://8ohm.ru/), [AudioVideoSystems Ltd](https://audioprofi.ru/), and [IMS Group Ltd](https://www.facebook.com/imsgroup.pro/), delivering end-to-end audiovisual systems for hospitality, universities and commercial environments. Led engineering workflow development and team training; handled pre-sales and client/contractor coordination; and designed, programmed, and commissioned solutions, managing projects from scoping through installation, handover, and training to ensure reliable, high-quality outcomes.
 
 ### Open Source Contributions
 - [Ported](https://github.com/akkadotnet/Akka.Management/pull/3365) Akka.NET Management DNS-based service discovery from Scala Akka; added async DNS provider, examples, tests, and docs—enabling reliable cluster bootstrapping.
 - Maintainer/contributor to [nixos/nixpkgs](https://github.com/NixOS/nixpkgs/pulls?q=author%3Aanpin) packages and modules, improving reproducibility and developer tooling.
 - Authored a popular MAUI/Xamarin.Forms [context menu plugin](https://github.com/anpin/ContextMenuContainer) with >60 GitHub stars.
-- Stabilized [Akkling](https://github.com/Horusiath/Akkling) F# library after upstream changes
-- Contributed to reviving and stabilizing [tweag/jupyenv](https://github.com/tweag/jupyenv), enabling better Nix-based Jupyter environments.
+- Active in arts/tech communities; explore generative visuals and interactive media.
 
-### Community Engagement
-- Contributed to [Budka Tbilisi](https://www.instagram.com/budkatbilisi/), a community-driven artist-run space supporting cultural events, exhibitions, and experimental performances. Assisted with technical infrastructure and event production.
-- Participated in open calls and discussions hosted by [scanlines.xyz](http://scanlines.xyz), contributing experimental video works and exploring community-driven media arts. Explored feedback-based generative audio visual works using vvvv, focusing on emergent forms and cybernetic aesthetics in audiovisual performance contexts.
+### Interests
+In my spare time, I enjoy learning new things, cycling, exploring generative visuals, baking and reflecting on the nature of consciousness.
 
 ## Education
 
@@ -109,3 +99,4 @@ Advanced from intern to project engineer, specializing in the design, programmin
 ##### Engineer's degree, Audio Visual Technologies | Sep 2009 - Jun 2014 (5 yrs)
 
 #### Graduation Work: Project of audiovisual complex for universal hall in the hotel "Hermitage" in the city of Yekaterinburg
+
