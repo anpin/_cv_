@@ -5,17 +5,6 @@ import Key from "../components/Key.astro";
 import "../styles.css";
 import "../cv-styles.css";
 
-type SidebarLink = {
-  label: string;
-  value: string;
-  href?: string;
-};
-
-type SidebarHighlight = {
-  title: string;
-  items: string[];
-};
-
 type SidebarPhoto = {
   src?: string;
   alt?: string;
@@ -25,10 +14,7 @@ type SidebarPhoto = {
 type SidebarConfig = {
   intro?: string;
   photo?: SidebarPhoto;
-  details?: SidebarLink[];
-  contact?: SidebarLink[];
   keywords?: string[];
-  highlights?: SidebarHighlight[];
 };
 
 type Props = {
@@ -47,15 +33,8 @@ const { PDF_VIEW, FORCE_THEME = "" } = import.meta.env;
 const frontmatter = Astro.props.frontmatter as Props["frontmatter"];
 const { title, noIndex, description, pdfLink, publickey, sidebar } =
   frontmatter;
-const hasSidebarContent = Boolean(
-  sidebar &&
-    (sidebar.intro ||
-      sidebar.photo ||
-      (sidebar.details && sidebar.details.length > 0) ||
-      (sidebar.contact && sidebar.contact.length > 0) ||
-      (sidebar.keywords && sidebar.keywords.length > 0) ||
-      (sidebar.highlights && sidebar.highlights.length > 0))
-);
+const hasPhoto = Boolean(sidebar && (sidebar.photo?.src || sidebar.photo));
+const hasKeywords = Boolean(sidebar && sidebar.keywords && sidebar.keywords.length > 0);
 const fallbackName = title.split(" - ")[0]?.trim() || title;
 const photoInitials =
   sidebar?.photo?.initials ||
@@ -68,7 +47,6 @@ const photoInitials =
 const photoAlt =
   sidebar?.photo?.alt || `${fallbackName} portrait placeholder`;
 const photoSrc = sidebar?.photo?.src;
-const showSidebarPhoto = Boolean(sidebar && (photoSrc || sidebar.photo));
 ---
 
 <!doctype html>
@@ -108,106 +86,42 @@ const showSidebarPhoto = Boolean(sidebar && (photoSrc || sidebar.photo));
             </div>
           )
         }
-        <div class={`cv-layout${hasSidebarContent ? "" : " cv-layout--single"}`}>
+        {hasPhoto && (
+          <div class="cv-photo-fixed">
+            {photoSrc ? (
+              <img
+                src={photoSrc}
+                alt={photoAlt}
+                loading="lazy"
+                class="cv-photo-img"
+              />
+            ) : (
+              <div
+                class="cv-photo-placeholder"
+                role="img"
+                aria-label={photoAlt}
+              >
+                <span>{photoInitials}</span>
+              </div>
+            )}
+          </div>
+        )}
+        
+        <div class="cv-layout-single">
           <main class="cv-main">
             <slot />
-          </main>
-          {hasSidebarContent && (
-            <aside class="cv-sidebar" aria-label="Professional highlights">
-              {showSidebarPhoto && (
-                <div class="cv-sidebar-photo">
-                  {photoSrc ? (
-                    <img
-                      src={photoSrc}
-                      alt={photoAlt}
-                      loading="lazy"
-                      class="cv-sidebar-photo-img"
-                    />
-                  ) : (
-                    <div
-                      class="cv-sidebar-photo-placeholder"
-                      role="img"
-                      aria-label={photoAlt}
-                    >
-                      <span>{photoInitials}</span>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {sidebar?.intro && (
-                <p class="cv-sidebar-intro">{sidebar.intro}</p>
-              )}
-
-              {sidebar?.details && sidebar.details.length > 0 && (
-                <section class="cv-sidebar-section">
-                  <h2>Details</h2>
-                  <dl class="cv-sidebar-details">
-                    {sidebar.details.map((detail) => (
-                      <div class="cv-sidebar-detail">
-                        <dt>{detail.label}</dt>
-                        <dd>
-                          {detail.href ? (
-                            <a href={detail.href} class="cv-sidebar-link">
-                              {detail.value}
-                            </a>
-                          ) : (
-                            detail.value
-                          )}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
-                </section>
-              )}
-
-              {sidebar?.contact && sidebar.contact.length > 0 && (
-                <section class="cv-sidebar-section">
-                  <h2>Contact</h2>
-                  <ul class="cv-sidebar-contact">
-                    {sidebar.contact.map((item) => (
-                      <li>
-                        <span class="cv-sidebar-contact-label">{item.label}</span>
-                        {item.href ? (
-                          <a href={item.href} class="cv-sidebar-link">
-                            {item.value}
-                          </a>
-                        ) : (
-                          <span class="cv-sidebar-contact-value">{item.value}</span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-
-              {sidebar?.keywords && sidebar.keywords.length > 0 && (
-                <section class="cv-sidebar-section">
-                  <h2>Keywords</h2>
-                  <div class="cv-sidebar-keywords">
-                    {sidebar.keywords.map((keyword) => (
-                      <span class="cv-sidebar-keyword">{keyword}</span>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {sidebar?.highlights && sidebar.highlights.length > 0 && (
-                <section class="cv-sidebar-section cv-sidebar-highlights">
-                  {sidebar.highlights.map((highlight) => (
-                    <div class="cv-sidebar-highlight">
-                      <h3>{highlight.title}</h3>
-                      <ul class="cv-sidebar-highlight-list">
-                        {highlight.items.map((item) => (
-                          <li>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
+            
+            {hasKeywords && sidebar?.keywords && (
+              <section class="cv-keywords-bottom">
+                <h2>Keywords</h2>
+                <div class="cv-keywords">
+                  {sidebar.keywords.map((keyword) => (
+                    <span class="cv-keyword">{keyword}</span>
                   ))}
-                </section>
-              )}
-            </aside>
-          )}
+                </div>
+              </section>
+            )}
+          </main>
         </div>
       </article>
     </div>

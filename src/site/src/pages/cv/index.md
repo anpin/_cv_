@@ -8,27 +8,7 @@ sidebar:
   photo:
     alt: "Portrait placeholder for Pavel Anpin"
     initials: "PA"
-  intro: >-
-    Senior Software Engineer delivering reliable software for smart buildings,
-    audiovisual platforms, and distributed systems.
-  details:
-    - label: "Location"
-      value: "Rio de Janeiro, Brazil (UTC-03:00)"
-    - label: "Languages"
-      value: "English, Russian, Portuguese"
-  contact:
-    - label: "Email"
-      value: "pavel@anpin.fyi"
-      href: "mailto:pavel@anpin.fyi"
-    - label: "Website"
-      value: "anpin.fyi"
-      href: "https://anpin.fyi"
-    - label: "GitHub"
-      value: "@anpin"
-      href: "https://github.com/anpin"
-    - label: "Matrix"
-      value: "@anpin:matrix.org"
-      href: "https://matrix.to/#/@anpin:matrix.org"
+    src: "/photo.jpg"
   keywords:
     - "Functional Programming"
     - "Distributed Systems"
@@ -42,26 +22,15 @@ sidebar:
     - "Interactive Installations"
     - "Control systems"
     - "Audiovisual installations"
-  highlights:
-    - title: "Recent Focus"
-      items:
-        - "Incident prevention and energy intelligence for smart buildings."
-        - "Model Predictive Control"
-        - "Automation rule engines with offline-first voice control."
-    - title: "Strengths"
-      items:
-        - "End-to-end product delivery with resilient distributed architectures."
-        - "Hands-on DevOps with reproducible Nix/NixOS workflows."
-        - "Migration of legacy systems to modern architectures."
 ---
 
-# Pavel Anpin, 1992
+# Pavel Anpin
 
-**Senior Software Engineer | Functional Programming | Distributed Systems**
+**Senior Software Engineer | Distributed Systems | 10+ years with .NET**
 
+[Email](mailto:pavel@anpin.fyi) | [Website](https://anpin.fyi) | [GitHub](https://github.com/anpin) | [Matrix](https://matrix.to/#/@anpin:matrix.org) | [LinkedIn](https://www.linkedin.com/in/pavel-anpin/)
 
 ## Summary
-
 
 Senior Software Engineer with 12+ years designing event-driven platforms for smart buildings, multimedia installations and other cyber-physical systems.
 
@@ -74,16 +43,20 @@ In my spare time, I enjoy learning new things, cycling, exploring generative vis
 
 ## Skills
 
-- **F# / C# / .NET:** over 10 years of experience with .NET (.NET CF, .NET Framework, .NET Core, dotnet), Akka.NET, Giraffe, Fable, ASP.NET and ASP.NET Core, CQRS, Event Sourcing, SignalR, MAUI, Xamarin.Forms, Avalonia, WPF, SkiaSharp, XAML, MSBuild, FAKE, Paket, Fable, Sutil, Akkling, FsharpPlus, OpenID, Azure B2C, MSAL, LDAP, OAuth, JWT, OpenAPI, REST, gRPC, json, xml, protobuf, SSL/TLS
+ 
+- **Languages:** F#, C#, SQL, C++, Nix, Rust, Lua, Bash, PowerShell, Python, HTML, CSS, JavaScript, Netlinx, ESP-IDF, Shaders (HLSL, GLSL)
 
+- **Backend & Distributed:** Akka.NET, Giraffe, ASP.NET/ASP.NET Core, CQRS/Event Sourcing, Actor Model, gRPC, REST, WebSockets, WebRTC, SignalR, OAuth2/OIDC, JWT, OpenAPI, OpenTelemetry, low level socket programming, 
 
-- **Architecture & Delivery:** Distributed systems, Actors, DDD, FP & OOP, DRY, SOLID, category theory, algorithms, linear algebra, statistics, machine learning, optimization, native mobile app development, embedded development
+- **Data & Observability:** PostgreSQL/TimescaleDB, ClickHouse, Redis, MQTT, RabbitMQ, Grafana, Prometheus, OpenTelemetry, jupyterlab, 
 
-- **DevOps & Infrastructure:** Nix / NixOS, GitHub Actions, Azure Pipelines, Docker, cloud (Azure, AWS), Linux administration, self-hosted infrastructure, network administration, iOS and Android app publishing  
+- **DevOps & Infra:** Nix/NixOS, Docker, Linux, systemd, Windows, Cloud (Azure, AWS, DO, hetzner), nginx/openresty, IIS, WireGuard, SSH, CI/CD pipelines, MSBuild, FAKE, Paket,tmux, nvim, git, rider, dotMemory, dotPeek
 
-- **Industry Knowledge:** PostgreSQL / TimescaleDB, ClickHouse, Grafana, Prometheus, OpenTelemetry, nginx, Redis, MQTT, RabbitMQ, WebRTC, WebSockets, ssh, tmux, wireguard, etc
+- **Frontend & Apps:** Fable, Avalonia, MAUI/Xamarin.Forms, WPF, SkiaSharp, Astro, TailwindCSS, HTMX, Vega, plotly.js, d3.js, p5.js, CSS, HTML, Figma, Adobe Illustrator
 
-- **Additional Programing languages and technologies**: Lua, Rust, C++, C, ESP-IDF, Netlinx, JavaScript, TypeScript, Bash, PowerShell, Nix, Shaders (HLSL, GLSL, SPIR-V), p5.js, SuperCollider, vvvv, TouchDesigner, MaxMSP/pd  
+- **Theoretical:** Category theory, algorithms, digital signal processing, linear algebra, statistics, machine learning, optimization, SCRUM/Agile/Kanban, neural networks, computer networks, control theory
+
+- **Live media tools:** vvvv, TouchDesigner, MaxMSP/pd, SuperCollider, Ableton Live, Crestron, Biamp, Dante 
 
 
 ## Work Experience
@@ -97,7 +70,7 @@ Co-founded a smart-building software startup specializing in incident prevention
 ### [Independent Contractor](https://anpin.fyi)
 #### Self-employed | Dec 2016 - Present
 
-Provided expert consulting services and bespoke software solutions across diverse industries, specializing in audiovisual installations, automation systems, and full-stack application development. Delivered and maintained cross-platform apps built with Xamarin.Forms and ASP.NET, transitioning them smoothly to MAUI/Avalonia with ASP.NET Core, while ensuring robust CI/CD practices and comprehensive testing. Transitioned client systems from C# to functional programming using F# and modern frameworks (Akka.Net, Giraffe, Avalonia), significantly enhancing maintainability and efficiency. Mastered a wide array of technologies including C#, F#, Fable, NixOS, Rust (embedded), PostgreSQL/TimescaleDB, Event Sourcing, CQRS, WebRTC, Astro, and advanced multimedia frameworks, demonstrating adaptability in tackling complex technical challenges.
+Provided expert consulting services and bespoke software solutions across diverse industries, specializing in audiovisual installations, automation systems, and full-stack application development. Delivered and maintained cross-platform apps built with Xamarin.Forms and ASP.NET, transitioning them smoothly to MAUI/Avalonia with ASP.NET Core, while ensuring robust CI/CD practices and comprehensive testing. Transitioned client systems from C# to functional programming using F# and modern frameworks (Akka.NET, Giraffe, Avalonia), significantly enhancing maintainability and efficiency. Mastered a wide array of technologies including C#, F#, Fable, NixOS, Rust (embedded), PostgreSQL/TimescaleDB, Event Sourcing, CQRS, WebRTC, Astro, and advanced multimedia frameworks, demonstrating adaptability in tackling complex technical challenges.
 
 
 ### [IMS Group Ltd](https://www.facebook.com/imsgroup.pro/) 
@@ -119,12 +92,11 @@ Provided pre-sales engineering support, coordinating audiovisual projects and li
 Advanced from intern to project engineer, specializing in the design, programming, and commissioning of tailored audiovisual solutions. Directly communicated with clients and contractors, delivering reliable installations and comprehensive post-installation training. Demonstrated adaptability, technical skill, and strong commitment to delivering solutions customized to meet diverse client requirements.
 
 ### Open Source Contributions
-- [Ported](https://github.com/akkadotnet/Akka.Management/pull/3365) Akka.NET Management’s DNS-based service discovery feature from the original Akka (Scala) implementation, adding async DNS provider support for A/AAAA/SRV records, full IPv6 compatibility, and comprehensive examples, tests, and documentation for cluster bootstrapping.
-- Maintainer of multiple [nixos/nixpkgs](https://github.com/NixOS/nixpkgs/pulls?q=author%3Aanpin) packages and modules, improving reproducibility and developer tooling.
-- Created a popular [context menu plugin](https://github.com/anpin/ContextMenuContainer) for Xamarin.Forms with >50 GitHub stars and several thousand NuGet downloads.
-- Developed and maintained CI/CD pipelines for the [Perfect-Fifth](https://github.com/mark-gerarts/perfect-fifth) project.
+- [Ported](https://github.com/akkadotnet/Akka.Management/pull/3365) Akka.NET Management DNS-based service discovery from Scala Akka; added async DNS provider, examples, tests, and docs—enabling reliable cluster bootstrapping.
+- Maintainer/contributor to [nixos/nixpkgs](https://github.com/NixOS/nixpkgs/pulls?q=author%3Aanpin) packages and modules, improving reproducibility and developer tooling.
+- Authored a popular MAUI/Xamarin.Forms [context menu plugin](https://github.com/anpin/ContextMenuContainer) with >60 GitHub stars.
+- Stabilized [Akkling](https://github.com/Horusiath/Akkling) F# library after upstream changes
 - Contributed to reviving and stabilizing [tweag/jupyenv](https://github.com/tweag/jupyenv), enabling better Nix-based Jupyter environments.
-- Helped resolve crashes in the [Akkling](https://github.com/Horusiath/Akkling) F# library after upstream package updates, supporting its continued use in production Akka.NET applications.
 
 ### Community Engagement
 - Contributed to [Budka Tbilisi](https://www.instagram.com/budkatbilisi/), a community-driven artist-run space supporting cultural events, exhibitions, and experimental performances. Assisted with technical infrastructure and event production.

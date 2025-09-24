@@ -47,7 +47,7 @@ const main = async () => {
 
   await page.pdf({
     path: "public/pavel_anpin_cv.pdf",
-    margin: { top: "30px", right: "30px", bottom: "30px", left: "30px" },
+    margin: { top: "5px", right: "5px", bottom: "5px", left: "5px" },
     printBackground: false,
     format: 'A4',
     preferCSSPageSize: true,
