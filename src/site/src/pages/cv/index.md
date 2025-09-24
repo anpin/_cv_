@@ -12,7 +12,7 @@ sidebar:
 ---
 
 # Pavel Anpin
-**Senior Software Engineer | Distributed Systems | 10+ years with .NET**
+**Software Engineer | Reproducible Distributed Systems | IoT**
 
 [Email:pavel@anpin.fyi](mailto:pavel@anpin.fyi) | [Website: anpin.fyi](https://anpin.fyi) | [GitHub: anpin](https://github.com/anpin) | [Matrix: @anpin:matrix.org](https://matrix.to/#/@anpin:matrix.org) | [LinkedIn](https://www.linkedin.com/in/pavel-anpin/)
 
@@ -20,10 +20,11 @@ sidebar:
 Senior Software Engineer with 10+ years building distributed .NET systems in F# and C#. Experienced in event-driven platforms, CQRS, and reproducible infrastructure. Skilled across backend, frontend, and cloud, delivering maintainable, production-ready solutions.
 
 ## Skills
-- **Languages:** F#, C#, SQL, Nix, Rust, Lua, Bash, PowerShell
-- **Backend & Distributed:** Akka.NET, Giraffe, ASP.NET Core, CQRS/Event Sourcing, gRPC, REST/HATEOAS, WebSockets, SignalR, OAuth2/OIDC  
+- **Languages:** F#, C#, SQL,  C++, Rust, Lua, Bash, PowerShell
+- **Build/DevOps/CI/CD:** Nix, CMAKE, MSBuild, FAKE, git, Docker, GitHub Actions, Azure DevOps, hardware in the loop testing
+- **Backend:** Akka.NET, Giraffe, ASP.NET Core, CQRS/Event Sourcing, gRPC, REST/HATEOAS, WebSockets, SignalR, OAuth2/OIDC  
 - **DevOps & Infra:**  NixOS, Docker, Linux, Azure, AWS, CI/CD pipelines, nginx, PostgreSQL/TimescaleDB, ClickHouse, Redis, MQTT, RabbitMQ, Grafana 
-- **Frontend & Apps:** Fable, Avalonia, MAUI/Xamarin.Forms, WPF, SkiaSharp, DaisyUI, HTMX
+- **Frontend:** Fable, Avalonia, MAUI/Xamarin.Forms, WPF, SkiaSharp, DaisyUI, HTMX
 
 ## Work Experience
 
@@ -31,7 +32,7 @@ Senior Software Engineer with 10+ years building distributed .NET systems in F# 
 #### Technical Founder | Dec 2022 - Present
 - Shipped real-time building control and monitoring platform for incidents, energy usage, and costs.
 - Prototyped a C# solution, gathered market and customer feedback and turned it into a full-stack F# platform (Giraffe/ASP.NET Core, Akka.NET, SignalR, Fable, HTMX, Vega, TimescaleDB/PostgreSQL).
-- Implemented reproducible, cost-efficient infrastructure with Nix/NixOS and a self-hosted stack (Grafana, ClickHouse, Forgejo, Authentik).
+- Implemented reproducible, declarative infrastructure with Nix/NixOS and a self-hosted stack (Grafana, ClickHouse, Forgejo, Authentik).
 - Built DSL for efficient hardware integration, runtime module registration from text files, automation rules and data pipelines.
 - Implemented reactive graph visualization for arbitary data from modules: 50000 sparse datapoints loaded in less than 5 seconds in a WebGL rendered graph. 
 - Implemented offline-first voice control over WebRTC for on-prem devices with self-hosted STT/TTS/LLM pipeline for user intent recognition and response, including smart speaker firmware for ESP32.
@@ -39,8 +40,8 @@ Senior Software Engineer with 10+ years building distributed .NET systems in F# 
 
 ### [Independent Contractor](https://anpin.fyi)
 #### Self-employed | Dec 2016 - Present
-Delivered bespoke software solutions. Built and maintained cross-platform apps (Xamarin.Forms/MAUI, Avalonia, ASP.NET Core), implemented CI/CD pipelines, and migrated client systems from .NET Framework/C# to dotnet 8 / F# using Akka.NET, Giraffe, and Avalonia—improving maintainability and scalability. Worked across a wide stack including PostgreSQL/TimescaleDB, Event Sourcing, CQRS, NixOS, and embedded Rust. Highlights:
-- Velonetic: Presentation room control system with custom CMS for Tizen signage, real-time web control, scheduling, transcoding, and integration with Crestron/Biamp/Dante.
+Delivered and maintained bespoke cross-platform native apps (Xamarin.Forms/MAUI, Avalonia), full-stack web services (ASP.NET Core, Giraffe, Akka.NET) and embeded firmware (ESP-IDF, Rust), implemented CI/CD pipelines, and migrated client systems from .NET Framework/C# to dotnet8/F# using Akka.NET, Giraffe, and Avalonia-improving maintainability and scalability. Highlights:
+- Velonetic: Presentation room control system with custom CMS for Tizen signage, real-time web control, scheduling, transcoding, and integration with Crestron/Biamp/Dante. Reproducible builds with NixOS and deployment CI/CD integration testing.
 - BrightlinkAV: original ASP.NET + XF app, migration to MAUI and .NET Core, Azure cloud deployment, and CI/CD automation for app publishing.
  
 ### Open Source Contributions
