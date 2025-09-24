@@ -14,7 +14,6 @@ type SidebarPhoto = {
 type SidebarConfig = {
   intro?: string;
   photo?: SidebarPhoto;
-  keywords?: string[];
 };
 
 type Props = {
@@ -34,7 +33,6 @@ const frontmatter = Astro.props.frontmatter as Props["frontmatter"];
 const { title, noIndex, description, pdfLink, publickey, sidebar } =
   frontmatter;
 const hasPhoto = Boolean(sidebar && (sidebar.photo?.src || sidebar.photo));
-const hasKeywords = Boolean(sidebar && sidebar.keywords && sidebar.keywords.length > 0);
 const fallbackName = title.split(" - ")[0]?.trim() || title;
 const photoInitials =
   sidebar?.photo?.initials ||
@@ -110,17 +108,6 @@ const photoSrc = sidebar?.photo?.src;
         <div class="cv-layout-single">
           <main class="cv-main">
             <slot />
-            
-            {hasKeywords && sidebar?.keywords && (
-              <section class="cv-keywords-bottom">
-                <h2>Keywords</h2>
-                <div class="cv-keywords">
-                  {sidebar.keywords.map((keyword) => (
-                    <span class="cv-keyword">{keyword}</span>
-                  ))}
-                </div>
-              </section>
-            )}
           </main>
         </div>
       </article>
