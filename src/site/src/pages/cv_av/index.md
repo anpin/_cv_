@@ -13,18 +13,21 @@ sidebar:
 
 # Pavel Anpin
 **Creative Technologist | Audiovisual Systems | Interactive Installations**
+***Rio de Janeiro, Brazil | Remote | Open to relocation ***
 
 [Email:pavel@anpin.fyi](mailto:pavel@anpin.fyi) | [Website: anpin.fyi](https://anpin.fyi) | [GitHub: anpin](https://github.com/anpin) | [Matrix: @anpin:matrix.org](https://matrix.to/#/@anpin:matrix.org) | [LinkedIn](https://www.linkedin.com/in/pavel-anpin/)
 
 ## Summary
-Creative technologist with 12+ years building multi-media installations and smart environments. Skillful at bringing cyber-physical systems to life from both hardware and software angles. Background in luxury hospitality and enterprise AV, multimedia performance contexts, and full-stack software engineering.
+Creative technologist with 12+ years of experience in bringing cyber-physical systems to life from both hardware and software angles. Background in AV system integration for luxury hospitality, enterprise and multimedia performance contexts. Knowledgeable in all aspects of software development, including backend, frontend, and cloud, delivering maintainable, production-ready solutions.
 
 ## Skills
-- **AV & Interactive Tech**:  projection, lighting, sound, sensor integration, computer vision, multicast networks, IP audio/video, DMX, OSC, MIDI, AVB, Dante. Brands: Panasonic, Sony, AMX, Crestron, Extron, Biamp, QSC, Bose, Void Acoustics, etc
 - **Creative Tools**: vvvv, TouchDesigner, OpenFrameworks, MaxMSP, pd, SuperCollider, madMapper, Ableton Live, shaders (GLSL/HLSL), p5.js
+- **AV integration**:  projection, lighting, sound, sensor integration, computer vision, multicast networks, IP audio/video, DMX, Art-Net, OSC, MIDI, AVB, Dante. Brands: Panasonic, Sony, AMX, Crestron, Extron, Biamp, QSC, Bose, Void Acoustics, etc
 - **Hardware & Prototyping**: wiring, rack assembly, PCB rework, soldering (SMD/through-hole), microcontrollers (ESP32/Arduino), AutoCAD, EASE
 - **Programming**: F#, C#, C++, Rust, Lua, Netlinx, Bash, PowerShell, skiasharp, webgl, webgpu, Astro, HTML, CSS, JS
 - **Backend & Infra**: Akka.NET, ASP.NET Core, Giraffe, gRPC/WebSockets/WebRTC, TimescaleDB/PostgreSQL, MQTT, NixOS, Docker, CI/CD
+- **Frontend:** Fable, Avalonia, MAUI/Xamarin.Forms, WPF, SkiaSharp, DaisyUI, TailwindCSS, HTMX
+
 
 ## Work Experience
 
@@ -72,3 +75,9 @@ Advanced from intern to engineer. Designed, commissioned and programmed bespoke 
 ## Certifications
 - Certified Programmer for many brands e.g.: Crestron, AMX, Extron, Biamp, Helvar and more
 - Dante Level 1 & 2
+
+## Languages
+English: Bilingual/Fluent, Russian: Native, Portuguese: basic
+
+## Location 
+Currently based in Rio de Janeiro, Brazil. Open to relocation and remote positions.

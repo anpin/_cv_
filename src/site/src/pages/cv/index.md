@@ -59,3 +59,8 @@ Progressed from intern to Chief Engineer across [8 Ohm Ltd](https://8ohm.ru/), [
 ##### Engineer's degree, Audio Visual Technologies | Sep 2009 - Jun 2014 (5 yrs)
 #### Graduation Work: Project of audiovisual complex for universal hall in the hotel "Hermitage" in the city of Yekaterinburg
 
+## Languages
+English: Bilingual/Fluent, Russian: Native, Portuguese: basic
+
+## Location 
+Currently based in Rio de Janeiro, Brazil. Open to relocation and remote positions.
