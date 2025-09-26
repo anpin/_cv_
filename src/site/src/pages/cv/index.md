@@ -17,7 +17,7 @@ sidebar:
 [Email:pavel@anpin.fyi](mailto:pavel@anpin.fyi) | [Website: anpin.fyi](https://anpin.fyi) | [GitHub: anpin](https://github.com/anpin) | [Matrix: @anpin:matrix.org](https://matrix.to/#/@anpin:matrix.org) | [LinkedIn](https://www.linkedin.com/in/pavel-anpin/)
 
 ## Summary
-Senior Software Engineer with 10+ years building distributed .NET systems in F# and C#. Experienced in event-driven platforms, CQRS, and reproducible infrastructure. Skilled across backend, frontend, and cloud, delivering maintainable, production-ready solutions.
+Senior Software Engineer with 10+ years building distributed .NET systems in F# and C#. Experienced in event-driven platforms, CQRS, and reproducible infrastructure. Knowledgeable in all aspects of software development, including backend, frontend, and cloud, delivering maintainable, production-ready solutions.
 
 ## Skills
 - **Languages:** F#, C#, SQL,  C++, Rust, Lua, Bash, PowerShell
