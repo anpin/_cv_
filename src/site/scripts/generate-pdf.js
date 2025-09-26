@@ -7,7 +7,14 @@ const main = async () => {
   const page = await browser.newPage();
 
   // Set print mode URL parameter
-  await page.goto("http://localhost:4321/cv?pdf=true", { waitUntil: "networkidle" });
+  // Allow parametrization via env vars or CLI arg
+  // Env vars: PDF_BASE_URL, PDF_PATH, PDF_QUERY, PDF_OUTPUT
+  // CLI: node scripts/generate-pdf.js /cv_av
+  const baseUrl = "http://localhost:4321";
+  const pathArg =  process.argv[2] || "/cv";
+  const query = "pdf=true";
+  const url = `${baseUrl}${pathArg}${pathArg.includes("?") ? "&" : "?"}${query}`;
+  await page.goto(url, { waitUntil: "networkidle" });
 
   // Apply print-friendly styles
   await page.evaluate(() => {
@@ -46,8 +53,8 @@ const main = async () => {
   await page.emulateMedia({ media: "print" });
 
   await page.pdf({
-    path: "public/pavel_anpin_cv.pdf",
-    margin: { top: "10px", right: "10px", bottom: "10px", left: "10px" },
+    path: process.argv[3] ||  "public/pavel_anpin_cv.pdf",
+    margin: { top: "0px", right: "0px", bottom: "0px", left: "0px" },
     printBackground: false,
     format: 'A4',
     preferCSSPageSize: true,
@@ -57,3 +64,4 @@ const main = async () => {
 };
 
 main();
+

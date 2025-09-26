@@ -10,8 +10,8 @@
   },
   "scripts": {
     "start":  "yarn workspace site start",
-    "generate-pdf": "yarn workspace site generate-pdf",
-    "generate-pdf:ci": "yarn workspace site generate-pdf:ci",
+    "generate-pdf": "yarn workspace site generate-pdf:all",
+    "generate-pdf:ci": "yarn workspace site generate-pdf:ci:all",
     "prebuild": "yarn --offline astro check",
     "build": "yarn --offline generate-pdf:ci && yarn workspace site build && astro build"
   },
