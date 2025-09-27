@@ -23,7 +23,7 @@ Creative technologist with 12+ years of experience in bringing cyber-physical sy
 ## Skills
 - **Creative Tools**: vvvv, TouchDesigner, OpenFrameworks, MaxMSP, pd, SuperCollider, madMapper, Ableton Live, shaders (GLSL/HLSL), p5.js
 - **AV integration**:  projection, lighting, sound, sensor integration, computer vision, multicast networks, IP audio/video, DMX, Art-Net, OSC, MIDI, AVB, Dante. Brands: Panasonic, Sony, AMX, Crestron, Extron, Biamp, QSC, Bose, Void Acoustics, etc
-- **Hardware & Prototyping**: wiring, rack assembly, PCB rework, soldering (SMD/through-hole), microcontrollers (ESP32/Arduino), AutoCAD, EASE
+- **Hardware & Prototyping**: wiring, rack assembly, breadboarding, PCB rework, soldering (SMD/through-hole), microcontrollers (ESP32/Arduino), AutoCAD, EASE
 - **Programming**: F#, C#, C++, Rust, Lua, Netlinx, Bash, PowerShell, skiasharp, webgl, webgpu, Astro, HTML, CSS, JS
 - **Backend & Infra**: Akka.NET, ASP.NET Core, Giraffe, gRPC/WebSockets/WebRTC, TimescaleDB/PostgreSQL, MQTT, NixOS, Docker, CI/CD
 - **Frontend:** Fable, Avalonia, MAUI/Xamarin.Forms, WPF, SkiaSharp, DaisyUI, TailwindCSS, HTMX
