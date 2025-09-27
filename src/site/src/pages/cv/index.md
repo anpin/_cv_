@@ -21,7 +21,7 @@ Senior Software Engineer with 10+ years building distributed .NET systems in F# 
 
 ## Skills
 - **Languages:** F#, C#, SQL,  C++, Rust, Lua, Bash, PowerShell
-- **Backend:** Akka.NET, Giraffe, ASP.NET Core, gRPC, REST/HATEOAS, WebSockets, SignalR, WebRTC, OAuth2/OIDC, SSO/SAML, RBAC, TLS, SOPS, OpenTelemetry, xUnit, NUnit, FsCheck, Expecto, CQRS/Event Sourcing, Domain-Driven Design (DDD)
+- **Backend:** Akka.NET, Giraffe, ASP.NET Core, gRPC, REST/HATEOAS, WebSockets, SignalR, WebRTC, OAuth2/OIDC, SSO/SAML, RBAC, TLS, GPG, YubiKey, SOPS, xUnit, NUnit, FsCheck, Expecto, OpenTelemetry, CQRS/Event Sourcing, Domain-Driven Design (DDD)
 - **Frontend:** Fable, Sutil, Avalonia, MAUI/Xamarin.Forms, WPF, SkiaSharp, TailwindCSS/DaisyUI, HTMX, Astro, Next.js
 - **DevOps:** Nix, Docker/OCI, CI/CD pipelines (GitHub Actions, Azure DevOps, etc), compiler tooling (CMAKE, MSBuild, FAKE etc.), git, integration & hardware-in-the-loop testing
 - **Infra:**  NixOS, Linux, Azure, AWS, Kubernetes, Nomad, Proxmox, QEMU, Firecracker, Ceph, MinIO, nginx, Authentik, PostgreSQL/TimescaleDB, Kafka, ClickHouse, Redis, MQTT, RabbitMQ, Grafana
