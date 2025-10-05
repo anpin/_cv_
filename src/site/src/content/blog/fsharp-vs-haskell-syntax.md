@@ -1,5 +1,5 @@
 ---
-title: "F# ↔ Haskell: syntax & concepts"
+title: "F# <$> Haskell: syntax & concepts"
 description: "Comparison for F# and Hasekll syntax"
 pubDate: 2025-10-02
 tags: [ "blog", "fsharp", "haskell"  ]
@@ -87,6 +87,62 @@ Comapring F# and Haskell syntax and notes on learning the latter.
 
 > **Note:** Haskell's `String` is `[Char]`. For performance, use `Data.Text` (import `Data.Text` qualified).
 
+### Haskell `class` / `instance` vs F# SRTP and interfaces
+
+In Haskell, a **type class** is like a compile-time interface that defines a set of operations any type can implement. Each concrete implementation is provided via an **`instance`** declaration. **class / instance** system provides compile-time ad-hoc polymorphism, similar to F# SRTP and interfaces.
+#### Haskell example
+```haskell
+-- Define a capability (like an interface)
+class Show a where
+    show :: a -> String
+
+-- Provide an implementation for Int
+instance Show Int where
+    show = Prelude.show
+
+-- Use it generically: compiler picks the right instance
+display :: Show a => a -> String
+display x = "Value: " ++ show x
+```
+#### F# example SRTP with instance member
+```fsharp
+// Define a similar capability via SRTP constraint
+let inline display (x: ^a) =
+    "Value: " +
+    ((^a : (member Show : ^a -> string) x))
+
+// Example type implementing 'Show'-like behavior
+type MyType(value: int) =
+    member _.Value = value
+    member _.Show() = sprintf "MyType(%d)" value
+
+// Works statically like Haskell's typeclass
+printfn "%s" (display (MyType(42)))
+```
+#### F# example with interface
+```fsharp
+type IShow =
+    abstract member Show : unit -> string
+
+type MyTypeI(value:int) =
+    interface IShow with
+        member _.Show() = sprintf "MyTypeI(%d)" value
+
+let displayI (x:#IShow) =
+    "Value: " + x.Show()
+
+printfn "%s" (displayI (MyTypeI 42))
+
+```
+| Concept                | Haskell                       | F# Equivalent                        |
+| ---------------------- | ----------------------------- | ------------------------------------ |
+| Define capability      | `class Show a where ...`      | SRTP or `type IShow`                 |
+| Provide implementation | `instance Show Int where ...` | inline member or interface impl      |
+| Use generically        | `f :: Show a => a -> String`  | `let inline f (x:^a) = ...`          |
+| Resolution             | Compiler picks globally       | SRTP resolved inline                 |
+| Nature                 | Ad-hoc polymorphism           | Static (SRTP) or nominal (interface) |
+| Runtime cost           | None (dictionary inlined)     | None for SRTP, vtable for interfaces |
+
 ## records & DUs (ADTs)
 
 |              | F#                                       | Haskell                                               |
@@ -114,6 +170,7 @@ Comapring F# and Haskell syntax and notes on learning the latter.
 | map       | `List.map f xs`                    | `map f xs`                                  |
 | filter    | `List.filter p xs`                 | `filter p xs`                               |
 | fold      | `List.fold f s xs`                 | `foldl' f s xs` *(strict)* / `foldr f z xs` |
+| 
 | list comp | `seq { for x in xs do yield x+1 }` | `[x+1 \| x <- xs]` |
 
 ## laziness & strictness
